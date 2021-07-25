@@ -3,9 +3,7 @@ info:
   version: 1.0.0
   title: Autobahn App API
   description: |
-    API für aktuelle Verwaltungsdaten in Bezug auf Baustellen-Informationen, Webcams, Parkplätze, …
-    Danke an Lilith Wittmann
-    https://gist.github.com/LilithWittmann/06bd153317b635e7b622651f5cfd95ea
+    Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.
 servers:
   - url: https://verkehr.autobahn.de/o/autobahn
 
