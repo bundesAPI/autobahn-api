@@ -672,3 +672,6 @@ components:
 
       allOf:
         - $ref: '#/components/schemas/RoadItem'
+externalDocs:
+  description: "Weiterführende Dokumentation"
+  url: "https://github.com/bundesAPI/autobahn-api/blob/main/README.md"
