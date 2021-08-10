@@ -41,7 +41,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Roadworks"
 
-  /{roadId}/services/roadworks/{roadworkId}:
+  /details/roadworks/{roadworkId}:
     get:
       operationId: get-roadwork
       summary: Details einer Baustelle
@@ -85,7 +85,7 @@ paths:
                 $ref: "#/components/schemas/Webcams"
 
   # https://verkehr.autobahn.de/o/autobahn/details/webcam/%5BID%5D
-  /{roadId}/services/webcam/{webcamId}:
+  /details/webcam/{webcamId}:
     get:
       operationId: get-webcam
       summary: Details einer Webcam
@@ -128,7 +128,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/ParkingLorries"
 
-  /{roadId}/services/parking_lorry/{lorryId}:
+  /details/parking_lorry/{lorryId}:
     get:
       operationId: get-parking-lorry
       summary: Details eines Rastplatzes
@@ -171,7 +171,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Warnings"
 
-  /{roadId}/services/warning/{warningId}:
+  /details/warning/{warningId}:
     get:
       operationId: get-warning
       summary: Details zu einer Verkehrsmeldung
@@ -214,7 +214,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Closures"
 
-  /{roadId}/services/closure/{closureId}:
+  /details/closure/{closureId}:
     get:
       operationId: get-closure
       summary: Details zu einer Sperrung
@@ -257,7 +257,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/ElectricChargingStations"
 
-  /{roadId}/services/electric_charging_station/{stationId}:
+  /details/electric_charging_station/{stationId}:
     get:
       operationId: get-charging-station
       summary: Details zu einer Ladestation
