@@ -353,6 +353,7 @@ components:
         - CLOSURE
         - CLOSURE_ENTRY_EXIT
         - STRONG_ELECTRIC_CHARGING_STATION
+        - SHORT_TERM_ROADWORKS
 
     LorryParkingFeatureIcon:
       type: object
