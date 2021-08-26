@@ -21,11 +21,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roads"
-            "":
-              # 404 I guess
-              schema:
-                type: string
-
+                
   /{roadId}/services/roadworks:
     get:
       operationId: list-roadworks
@@ -44,6 +40,11 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roadworks"
+            "":
+              # 404 I guess
+              schema:
+                type: string
+
 
   /details/roadworks/{roadworkId}:
     get:
