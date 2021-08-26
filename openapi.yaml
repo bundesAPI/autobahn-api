@@ -22,7 +22,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Roads"
             "":
-              description: Not Found
+              # 404 I guess
               schema:
                 type: string
 
