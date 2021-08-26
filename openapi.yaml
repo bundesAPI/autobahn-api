@@ -47,11 +47,6 @@ paths:
       summary: Details einer Baustelle
       description: Gibt Details zu einer konkreten Baustelle zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: roadworkId
           in: path
           required: true
@@ -91,11 +86,6 @@ paths:
       summary: Details einer Webcam
       description: Gibt Details einer konkreten Webcam zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: webcamId
           in: path
           required: true
@@ -134,11 +124,6 @@ paths:
       summary: Details eines Rastplatzes
       description: Gibt Details eines konkreten Rastplatzes zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: lorryId
           in: path
           required: true
@@ -177,11 +162,6 @@ paths:
       summary: Details zu einer Verkehrsmeldung
       description: Gibt Details zu einer konkreten Verkehrsmeldung zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: warningId
           in: path
           required: true
@@ -220,11 +200,6 @@ paths:
       summary: Details zu einer Sperrung
       description: Gibt Details zu einer konkreten Sperrung zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: closureId
           in: path
           required: true
@@ -263,11 +238,6 @@ paths:
       summary: Details zu einer Ladestation
       description: Gibt Details zu einer konkreten Ladestation zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: stationId
           in: path
           required: true
