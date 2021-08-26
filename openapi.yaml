@@ -386,7 +386,7 @@ components:
           items:
             $ref: '#/components/schemas/LorryParkingFeatureIcon'
         future:
-          type: string
+          type: boolean
         subtitle:
           type: string
 
