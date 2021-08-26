@@ -21,6 +21,10 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roads"
+            "":
+              description: Not Found
+              schema:
+                type: string
 
   /{roadId}/services/roadworks:
     get:
