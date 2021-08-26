@@ -372,8 +372,7 @@ components:
         icon:
           $ref: '#/components/schemas/IconRef'
         isBlocked:
-          # Anscheinend nicht wirklich... Aber Parser sollten das schlucken
-          type: boolean
+          type: string
         description:
           $ref: '#/components/schemas/MultilineText'
         title:
@@ -387,7 +386,7 @@ components:
           items:
             $ref: '#/components/schemas/LorryParkingFeatureIcon'
         future:
-          type: boolean
+          type: string
         subtitle:
           type: string
 
