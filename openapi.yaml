@@ -51,7 +51,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "Uk9BRFdPUktTX19tZG0ubndfXzAyLTgwMDAwIEQgNzEgMTkgMDkvS0xCV1JO"
       responses:
         "200":
           description: Success
@@ -90,7 +92,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "V0VCQ0FNX19OUldfU2lsYS1TaWduYWxiYXVfMTAxMDgxNDE3MjM4ODYzOTk5MTU="
       responses:
         "200":
           description: Success
@@ -128,7 +132,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA=="
       responses:
         "200":
           description: Success
@@ -166,7 +172,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "V0FSTklOR19fbWRtLnZpel9fTE1TLU5XL3JfTE1TLU5XLzMyNDE3OV9EICBOVyBMTVMtTlcuMA=="
       responses:
         "200":
           description: Success
@@ -204,7 +212,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "Q0xPU1VSRV9fbWRtLnZpel9fTE1TLU5XL3JfVElDLU5SV0JMSy8zOS9OUldCTEsvMTAgMzUgMjEgRCAwOTI0Mi0wMV9EICBOVyBMTVMtTlcuMA=="
       responses:
         "200":
           description: Success
@@ -242,7 +252,9 @@ paths:
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "RUxFQ1RSSUNfQ0hBUkdJTkdfU1RBVElPTl9fMTczMzM="
       responses:
         "200":
           description: Success
@@ -265,6 +277,7 @@ components:
     RoadId:
       type: string
       pattern: "A[0-9]+(?:/?A[0-9]+)*"
+      example: "A1"
 
     Extent:
       type: string
