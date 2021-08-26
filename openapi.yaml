@@ -15,7 +15,7 @@ paths:
       summary: Liste verfügbarer Autobahnen
       description: Gibt eine Liste der verfügbaren Autobahnen zurück.
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -34,7 +34,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -47,18 +47,15 @@ paths:
       summary: Details einer Baustelle
       description: Gibt Details zu einer konkreten Baustelle zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: roadworkId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "Uk9BRFdPUktTX19tZG0ubndfXzAyLTgwMDAwIEQgNzEgMTkgMDkvS0xCV1JO"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -77,7 +74,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -91,18 +88,15 @@ paths:
       summary: Details einer Webcam
       description: Gibt Details einer konkreten Webcam zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: webcamId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "V0VCQ0FNX19OUldfU2lsYS1TaWduYWxiYXVfMTAxMDgxNDE3MjM4ODYzOTk5MTU="
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -121,7 +115,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -134,18 +128,15 @@ paths:
       summary: Details eines Rastplatzes
       description: Gibt Details eines konkreten Rastplatzes zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: lorryId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA=="
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -164,7 +155,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -177,18 +168,15 @@ paths:
       summary: Details zu einer Verkehrsmeldung
       description: Gibt Details zu einer konkreten Verkehrsmeldung zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: warningId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "V0FSTklOR19fbWRtLnZpel9fTE1TLU5XL3JfTE1TLU5XLzMyNDE3OV9EICBOVyBMTVMtTlcuMA=="
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -207,7 +195,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -220,18 +208,15 @@ paths:
       summary: Details zu einer Sperrung
       description: Gibt Details zu einer konkreten Sperrung zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: closureId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "Q0xPU1VSRV9fbWRtLnZpel9fTE1TLU5XL3JfVElDLU5SV0JMSy8zOS9OUldCTEsvMTAgMzUgMjEgRCAwOTI0Mi0wMV9EICBOVyBMTVMtTlcuMA=="
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -250,7 +235,7 @@ paths:
           schema:
             $ref: "#/components/schemas/RoadId"
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -263,18 +248,15 @@ paths:
       summary: Details zu einer Ladestation
       description: Gibt Details zu einer konkreten Ladestation zurück.
       parameters:
-        - name: roadId
-          in: path
-          required: true
-          schema:
-            $ref: "#/components/schemas/RoadId"
         - name: stationId
           in: path
           required: true
           schema:
-            $ref: "#/components/schemas/Identifier"
+            type: string
+            format: base64
+            example: "RUxFQ1RSSUNfQ0hBUkdJTkdfU1RBVElPTl9fMTczMzM="
       responses:
-        200:
+        "200":
           description: Success
           content:
             application/json:
@@ -295,6 +277,7 @@ components:
     RoadId:
       type: string
       pattern: "A[0-9]+(?:/?A[0-9]+)*"
+      example: "A1"
 
     Extent:
       type: string
