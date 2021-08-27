@@ -40,11 +40,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roadworks"
-            "":
-              # 404 I guess
-              schema:
-                type: string
-
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /details/roadworks/{roadworkId}:
     get:
@@ -66,6 +67,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roadwork"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /{roadId}/services/webcam:
     get:
@@ -85,6 +92,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Webcams"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   # https://verkehr.autobahn.de/o/autobahn/details/webcam/%5BID%5D
   /details/webcam/{webcamId}:
@@ -107,6 +120,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Webcam"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /{roadId}/services/parking_lorry:
     get:
@@ -126,6 +145,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ParkingLorries"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /details/parking_lorry/{lorryId}:
     get:
@@ -147,6 +172,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ParkingLorry"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /{roadId}/services/warning:
     get:
@@ -166,6 +197,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Warnings"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /details/warning/{warningId}:
     get:
@@ -187,6 +224,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Warning"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /{roadId}/services/closure:
     get:
@@ -206,6 +249,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Closures"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /details/closure/{closureId}:
     get:
@@ -227,6 +276,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Closure"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /{roadId}/services/electric_charging_station:
     get:
@@ -246,6 +301,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectricChargingStations"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
   /details/electric_charging_station/{stationId}:
     get:
@@ -267,6 +328,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ElectricChargingStation"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
 
 components:
   schemas:
@@ -281,7 +348,7 @@ components:
 
     RoadId:
       type: string
-      pattern: "A[0-9]+(?:/?A[0-9]+)*"
+      pattern: "A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?"
       example: "A1"
 
     Extent:
@@ -342,6 +409,7 @@ components:
         - CLOSURE_ENTRY_EXIT
         - STRONG_ELECTRIC_CHARGING_STATION
         - SHORT_TERM_ROADWORKS
+        - ELECTRIC_CHARGING_STATION
 
     LorryParkingFeatureIcon:
       type: object
