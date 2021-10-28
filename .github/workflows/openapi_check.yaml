@@ -22,4 +22,4 @@ jobs:
           uses: openapi-generators/openapitools-generator-action@v1
           with:
             generator: python
-            openapi-file: openapi.yaml
+            openapi-url: https://github.com/wirthual/autobahn-api/blob/main/openapi.yaml
