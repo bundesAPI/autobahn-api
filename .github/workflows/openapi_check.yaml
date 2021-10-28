@@ -16,7 +16,7 @@ jobs:
         - name: Check if file is correct
           uses: stoplightio/spectral-action@v0.8.1
           with:
-            file_glob: ./**/openapi.yaml
+            file_glob: openapi.yaml
 
         - name: Generate Python Client
           uses: openapi-generators/openapitools-generator-action@v1
