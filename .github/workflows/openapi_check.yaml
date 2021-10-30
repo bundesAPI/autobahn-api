@@ -19,7 +19,7 @@ jobs:
             file_glob: openapi.yaml
 
         - name: Generate Python Client
-          uses: openapi-generators/openapitools-generator-action@v1
+          uses: wirthual/openapitools-generator-action@v1
           with:
             openapi-file: openapi.yaml
             #config-file: generator_config.yaml
