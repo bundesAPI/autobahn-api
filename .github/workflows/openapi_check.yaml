@@ -19,7 +19,7 @@ jobs:
             file_glob: openapi.yaml
 
         - name: Generate Python Client
-          uses: openapi-generators/openapitools-generator-action@v1.1.0
+          uses: openapi-generators/openapi-python-client-action@v2
           with:
-            generator: python
-            openapi-url: https://github.com/wirthual/autobahn-api/blob/main/openapi.yaml
+            openapi-file: openapi.yaml
+            config-file: generator_config.yaml
