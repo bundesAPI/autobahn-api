@@ -23,4 +23,8 @@ jobs:
           with:
             generator: python
             openapi-file: openapi.yaml
-            #config-file: generator_config.yaml
+            config-file: generator_config.yaml
+
+        - name: Print dir after generation
+          run: |
+            ls ${{ github.workspace }}
