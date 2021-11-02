@@ -30,7 +30,7 @@ if __name__ == "__main__":
             with open(filepath, "w") as file:
                 file.write(s)
 
-    os.makedirs(destination_path,exist_ok=True)
+    os.makedirs(".python-client/deutschland/",exist_ok=True)
 
     # Copy the module to the deutschland folder
     print(
