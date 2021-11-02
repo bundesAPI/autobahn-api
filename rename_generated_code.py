@@ -28,9 +28,12 @@ if __name__ == "__main__":
                 f'from deutschland import {api["name"]}',
             )
             with open(filepath, "w") as file:
-                file.write(s)
+                file.write(s)generation_module_path
 
-    os.makedirs(os.path.join(generation_base_path,"deutschland"),exist_ok=True)
+    os.makedirs(destination_path,exist_ok=True)
 
     # Copy the module to the deutschland folder
+    print(
+        f"Try to copy from {generation_module_path} to {destination_path}
+    )
     distutils.dir_util.copy_tree(generation_module_path, destination_path)
