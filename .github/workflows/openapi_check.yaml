@@ -40,3 +40,7 @@ jobs:
         - name: execute py script # run the run.py to get the latest data
           run: |
             python rename_generated_code.py
+
+        - name: Print dir after renaming
+          run: |
+            ls ${{ github.workspace }}/python-client
