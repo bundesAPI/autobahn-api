@@ -44,6 +44,8 @@ jobs:
         - name: Print python-client dir after renaming
           run: |
             ls ${{ github.workspace }}/python-client
+            mkdir ${{ github.workspace }}/python-client/deutschland
+            mv ${{ github.workspace }}/python-client/autobahn ${{ github.workspace }}/python-client/deutschland/autobahn
 
         - name: Install pypa/build
           run: >-

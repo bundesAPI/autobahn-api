@@ -30,11 +30,3 @@ if __name__ == "__main__":
             with open(filepath, "w") as file:
                 file.write(s)
 
-    os.makedirs(".python-client/deutschland/",exist_ok=True)
-
-    # Copy the module to the deutschland folder
-    print(
-        f"Try to copy from {generation_module_path} to {destination_path}"
-    )
-
-    distutils.dir_util.copy_tree(generation_module_path, ".python-client/deutschland/")
