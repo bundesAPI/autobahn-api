@@ -1,1 +1,2 @@
-packageName: "autobahn"
+additionalProperties:
+  packageName: "autobahn"
