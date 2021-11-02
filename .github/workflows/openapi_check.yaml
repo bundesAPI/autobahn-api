@@ -41,6 +41,9 @@ jobs:
           run: |
             python rename_generated_code.py
 
+        - name: Print python-client dir after renaming
+          run: |
+            ls ${{ github.workspace }}/python-client
 
         - name: Install pypa/build
           run: >-
