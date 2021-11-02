@@ -36,4 +36,5 @@ if __name__ == "__main__":
     print(
         f"Try to copy from {generation_module_path} to {destination_path}"
     )
-    distutils.dir_util.copy_tree(generation_module_path, destination_path)
+
+    distutils.dir_util.copy_tree(generation_module_path, ".python-client/deutschland/")
