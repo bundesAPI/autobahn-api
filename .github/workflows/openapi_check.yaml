@@ -8,6 +8,13 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
 
+
+        - name: setup python
+          uses: actions/setup-python@v2
+          with:
+            python-version: 3.7
+
+
         - name: Print dir
           run: |
             ls ${{ github.workspace }}
@@ -28,3 +35,8 @@ jobs:
         - name: Print dir after generation
           run: |
             ls ${{ github.workspace }}
+            ls ${{ github.workspace }}/python-client
+
+        - name: execute py script # run the run.py to get the latest data
+          run: |
+            python rename_generated_code.py
