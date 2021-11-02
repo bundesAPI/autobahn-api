@@ -34,6 +34,6 @@ if __name__ == "__main__":
 
     # Copy the module to the deutschland folder
     print(
-        f"Try to copy from {generation_module_path} to {destination_path}
+        f"Try to copy from {generation_module_path} to {destination_path}"
     )
     distutils.dir_util.copy_tree(generation_module_path, destination_path)
