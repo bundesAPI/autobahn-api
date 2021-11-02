@@ -28,7 +28,7 @@ if __name__ == "__main__":
                 f'from deutschland import {api["name"]}',
             )
             with open(filepath, "w") as file:
-                file.write(s)generation_module_path
+                file.write(s)
 
     os.makedirs(destination_path,exist_ok=True)
 
