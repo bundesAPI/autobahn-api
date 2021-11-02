@@ -46,6 +46,7 @@ jobs:
             ls ${{ github.workspace }}/python-client
             mkdir ${{ github.workspace }}/python-client/deutschland
             mv ${{ github.workspace }}/python-client/autobahn ${{ github.workspace }}/python-client/deutschland/autobahn
+            ls ${{ github.workspace }}/python-client
 
         - name: Install pypa/build
           run: >-
