@@ -41,6 +41,7 @@ jobs:
           run: |
             python rename_generated_code.py
 
-        - name: Print dir after renaming
-          run: |
-            ls ${{ github.workspace }}/python-client
+        - uses: actions/upload-artifact@v2
+          with:
+            name: "postprocessed-code"
+            path: ${{ github.workspace }}/python-client # or path/to/artifact
