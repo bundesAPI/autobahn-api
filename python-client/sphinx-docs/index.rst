@@ -1,6 +1,11 @@
 AutobahnAPI Doc
 ===============
 
-.. mdinclude:: ../README.md
+.. toctree::
+   :glob:
 
-.. include:: ../docs/index.rst
+   source/*
+
+
+.. 
+   all files in sources/ are generated using sphinx-apidoc -o source/ ../deutschland
