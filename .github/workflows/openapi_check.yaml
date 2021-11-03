@@ -41,7 +41,7 @@ jobs:
           run: |
             python rename_generated_code.py
 
-        - name: Print python-client dir after renaming
+        - name: Print python-client dir after renaming and move it into the deutschland subfolder
           run: |
             echo "======================== Python client ===================================="
             ls ${{ github.workspace }}/python-client
@@ -51,13 +51,26 @@ jobs:
             echo "======================= Python client / Deutschland ======================"
             ls ${{ github.workspace }}/python-client/deutschland
 
-        - name: Install pypa/build
+
+        - name: Commit files
+          run: |
+            git config --local user.email "bundesAPI@users.noreply.github.com"
+            git config --local user.name "bundesbot"
+            git commit -m "Generate newest code from openapi.yaml" -a
+        - name: Push changes
+          uses: ad-m/github-push-action@master
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            branch: ${{ github.ref }}
+
+        - name: Install pypa/build and twine for uploading
           run: >-
             python -m
             pip install
             build twine
             --user
-        - name: Build a binary wheel and a source tarball
+
+        - name: Build a binary wheel and a source tarball using build module
           run: |
             cd ${{ github.workspace }}/python-client
             python -m build --sdist --wheel --outdir dist/
@@ -69,7 +82,7 @@ jobs:
 
 
         # Upload to TestPyPI
-        - name: Build and Upload to TestPyPI
+        - name: Upload to TestPyPI using twine
           run: |
             cd ${{ github.workspace }}/python-client
             python -m twine upload dist/*
