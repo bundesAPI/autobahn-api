@@ -71,7 +71,8 @@ jobs:
         # Upload to TestPyPI
         - name: Build and Upload to TestPyPI
           run: |
-            python3 -m twine upload dist/*
+            cd ${{ github.workspace }}/python-client
+            python -m twine upload dist/*
           env:
             TWINE_USERNAME: __token__
             TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
