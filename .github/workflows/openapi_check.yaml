@@ -45,7 +45,7 @@ jobs:
           run: |
             echo "======================== Python client ===================================="
             ls ${{ github.workspace }}/python-client
-            mkdir ${{ github.workspace }}/python-client/deutschland
+            mkdir -p ${{ github.workspace }}/python-client/deutschland
             mv ${{ github.workspace }}/python-client/autobahn ${{ github.workspace }}/python-client/deutschland/autobahn
             cp ${{ github.workspace }}/__init__.py.template  ${{ github.workspace }}/python-client/deutschland/__init__.py
             echo "======================= Python client / Deutschland ======================"
