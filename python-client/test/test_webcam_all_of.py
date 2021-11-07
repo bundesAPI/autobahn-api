@@ -11,7 +11,7 @@
 import sys
 import unittest
 
-from deutschland import autobahn
+from deutschland from deutschland import autobahn
 from deutschland.autobahn.model.webcam_all_of import WebcamAllOf
 
 

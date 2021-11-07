@@ -11,7 +11,7 @@
 import sys
 import unittest
 
-from deutschland import autobahn
+from deutschland from deutschland import autobahn
 from deutschland.autobahn.model.road_id import RoadId
 globals()['RoadId'] = RoadId
 from deutschland.autobahn.model.roads import Roads
