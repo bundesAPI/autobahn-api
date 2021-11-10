@@ -51,6 +51,10 @@ jobs:
             echo "======================= Python client / Deutschland ======================"
             ls ${{ github.workspace }}/python-client/deutschland
 
+        - name: generate sphinx-documentation
+          run: |
+            pip install sphinx
+            python create_doc.py
 
         - name: Add and Commit files
           run: |
