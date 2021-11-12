@@ -15,9 +15,9 @@ jobs:
             python-version: 3.7
 
 
-        - name: Print dir
+        - name: Clean up existing generated code
           run: |
-            ls ${{ github.workspace }}
+            rm -rf ${{ github.workspace }}/python-client
 
         # Runs a single command using the runners shell
         - name: Check if file is correct
