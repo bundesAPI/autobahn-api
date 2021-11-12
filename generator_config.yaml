@@ -1,2 +1,5 @@
 additionalProperties:
-  packageName: "autobahn"
+  packageName: "autobahn" # TODO: Pull from repo
+  infoName: "BundesAPI"
+  infoEmail: "kontakt@bund.dev"
+  packageUrl: "https://github.com/bundesAPI/autobahn-api" # TODO: Pull from repo

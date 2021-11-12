@@ -143,7 +143,7 @@ Class | Method | HTTP request | Description
 
 ## Author
 
-
+kontakt@bund.dev
 
 
 ## Notes for Large OpenAPI documents
