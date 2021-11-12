@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland from deutschland import autobahn
+from deutschland import autobahn
 from deutschland.autobahn.model.lat_long_value import LatLongValue
 globals()['LatLongValue'] = LatLongValue
 from deutschland.autobahn.model.coordinate import Coordinate

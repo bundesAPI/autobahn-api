@@ -11,7 +11,7 @@
 
 import unittest
 
-from deutschland from deutschland import autobahn
+from deutschland import autobahn
 from deutschland.autobahn.api.default_api import DefaultApi  # noqa: E501
 
 

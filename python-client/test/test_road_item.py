@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland from deutschland import autobahn
+from deutschland import autobahn
 from deutschland.autobahn.model.coordinate import Coordinate
 from deutschland.autobahn.model.display_type import DisplayType
 from deutschland.autobahn.model.extent import Extent
