@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland from deutschland import autobahn
+from deutschland import autobahn
 from deutschland.autobahn.model.closure import Closure
 globals()['Closure'] = Closure
 from deutschland.autobahn.model.closures import Closures

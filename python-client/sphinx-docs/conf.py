@@ -1,9 +1,6 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath("../"))
-import os
-import sys
-sys.path.insert(0, os.path.abspath("../"))
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -76,5 +73,4 @@ html_static_path = ['_static']
 
 
 # -- Extension configuration -------------------------------------------------
-source_extensions = [".rst", ".md"]
 source_extensions = [".rst", ".md"]

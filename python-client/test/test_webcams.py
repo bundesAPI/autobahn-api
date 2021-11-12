@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland from deutschland import autobahn
+from deutschland import autobahn
 from deutschland.autobahn.model.webcam import Webcam
 globals()['Webcam'] = Webcam
 from deutschland.autobahn.model.webcams import Webcams
