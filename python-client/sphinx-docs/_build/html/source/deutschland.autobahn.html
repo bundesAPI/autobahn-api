@@ -1,0 +1,754 @@
+
+<!DOCTYPE html>
+
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>deutschland.autobahn package &#8212; autobahn-api 0.0.1 Dokumentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css" />
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/translations.js"></script>
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="deutschland.autobahn.api package" href="deutschland.autobahn.api.html" />
+    <link rel="prev" title="deutschland package" href="deutschland.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="deutschland-autobahn-package">
+<h1>deutschland.autobahn package<a class="headerlink" href="#deutschland-autobahn-package" title="Link zu dieser Überschrift">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.api.html">deutschland.autobahn.api package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.api.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.api.html#deutschland-autobahn-api-default-api-module">deutschland.autobahn.api.default_api module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.api.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.apis.html">deutschland.autobahn.apis package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.apis.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.model.html">deutschland.autobahn.model package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-closure-module">deutschland.autobahn.model.closure module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-closures-module">deutschland.autobahn.model.closures module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-coordinate-module">deutschland.autobahn.model.coordinate module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-display-type-module">deutschland.autobahn.model.display_type module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-electric-charging-station-module">deutschland.autobahn.model.electric_charging_station module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-electric-charging-stations-module">deutschland.autobahn.model.electric_charging_stations module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-extent-module">deutschland.autobahn.model.extent module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-lat-long-value-module">deutschland.autobahn.model.lat_long_value module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-lorry-parking-feature-icon-module">deutschland.autobahn.model.lorry_parking_feature_icon module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-multiline-text-module">deutschland.autobahn.model.multiline_text module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-parking-lorries-module">deutschland.autobahn.model.parking_lorries module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-parking-lorry-module">deutschland.autobahn.model.parking_lorry module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-point-module">deutschland.autobahn.model.point module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-road-event-module">deutschland.autobahn.model.road_event module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-road-event-all-of-module">deutschland.autobahn.model.road_event_all_of module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-road-id-module">deutschland.autobahn.model.road_id module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-road-item-module">deutschland.autobahn.model.road_item module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-roads-module">deutschland.autobahn.model.roads module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-roadwork-module">deutschland.autobahn.model.roadwork module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-roadworks-module">deutschland.autobahn.model.roadworks module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-warning-module">deutschland.autobahn.model.warning module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-warnings-module">deutschland.autobahn.model.warnings module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-webcam-module">deutschland.autobahn.model.webcam module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-webcam-all-of-module">deutschland.autobahn.model.webcam_all_of module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#deutschland-autobahn-model-webcams-module">deutschland.autobahn.model.webcams module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.model.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.models.html">deutschland.autobahn.models package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.autobahn.models.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+<section id="deutschland-autobahn-api-client-module">
+<h2>deutschland.autobahn.api_client module<a class="headerlink" href="#deutschland-autobahn-api-client-module" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+<section id="module-deutschland.autobahn.configuration">
+<span id="deutschland-autobahn-configuration-module"></span><h2>deutschland.autobahn.configuration module<a class="headerlink" href="#module-deutschland.autobahn.configuration" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Autobahn App API</p>
+<p>Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.0.0
+Contact: <a class="reference external" href="mailto:kontakt&#37;&#52;&#48;bund&#46;dev">kontakt<span>&#64;</span>bund<span>&#46;</span>dev</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.configuration.</span></span><span class="sig-name descname"><span class="pre">Configuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">host</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key_prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">access_token</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discard_unknown_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">disabled_client_side_validations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_operation_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">server_operation_variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ssl_ca_cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>NOTE: This class is auto generated by OpenAPI Generator</p>
+<p>Ref: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a>
+Do not edit the class manually.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>host</strong> – Base url</p></li>
+<li><p><strong>api_key</strong> – Dict to store API key(s).
+Each entry in the dict specifies an API key.
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is the API key secret.</p></li>
+<li><p><strong>api_key_prefix</strong> – Dict to store API prefix (e.g. Bearer)
+The dict key is the name of the security scheme in the OAS specification.
+The dict value is an API key prefix when generating the auth data.</p></li>
+<li><p><strong>username</strong> – Username for HTTP basic authentication</p></li>
+<li><p><strong>password</strong> – Password for HTTP basic authentication</p></li>
+<li><p><strong>discard_unknown_keys</strong> – <p>Boolean value indicating whether to discard
+unknown properties. A server may send a response that includes additional
+properties that are not known by the client in the following scenarios:
+1. The OpenAPI document is incomplete, i.e. it does not match the server</p>
+<blockquote>
+<div><p>implementation.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>The client was generated using an older version of the OpenAPI document
+and the server has been upgraded since then.</p></li>
+</ol>
+<p>If a schema in the OpenAPI document defines the additionalProperties attribute,
+then all undeclared properties received by the server are injected into the
+additional properties map. In that case, there are undeclared properties, and
+nothing to discard.</p>
+</p></li>
+<li><p><strong>(</strong><strong>string</strong><strong>)</strong> (<em>disabled_client_side_validations</em>) – Comma-separated list of
+JSON schema validation keywords to disable JSON schema structural validation
+rules. The following keywords may be specified: multipleOf, maximum,
+exclusiveMaximum, minimum, exclusiveMinimum, maxLength, minLength, pattern,
+maxItems, minItems.
+By default, the validation is performed for data generated locally by the client
+and data received from the server, independent of any validation performed by
+the server side. If the input data does not satisfy the JSON schema validation
+rules specified in the OpenAPI document, an exception is raised.
+If disabled_client_side_validations is set, structural validation is
+disabled. This can be useful to troubleshoot data validation problem, such as
+when the OpenAPI document validation rules do not match the actual API data
+received by the server.</p></li>
+<li><p><strong>server_index</strong> – Index to servers configuration.</p></li>
+<li><p><strong>server_variables</strong> – Mapping with string values to replace variables in
+templated server configuration. The validation of enums is performed for
+variables with defined enum values before.</p></li>
+<li><p><strong>server_operation_index</strong> – Mapping from operation ID to an index to server
+configuration.</p></li>
+<li><p><strong>server_operation_variables</strong> – Mapping from operation ID to a mapping with
+string values to replace variables in templated server configuration.
+The validation of enums is performed for variables with defined enum values before.</p></li>
+<li><p><strong>ssl_ca_cert</strong> – str - the path to a file of concatenated CA certificates
+in PEM format</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.assert_hostname">
+<span class="sig-name descname"><span class="pre">assert_hostname</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.assert_hostname" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Set this to True/False to enable/disable SSL hostname verification.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.auth_settings">
+<span class="sig-name descname"><span class="pre">auth_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.auth_settings" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets Auth Settings dict for api client.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe</dt>
+<dd class="field-odd"><p>The Auth Settings information dict.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.cert_file">
+<span class="sig-name descname"><span class="pre">cert_file</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.cert_file" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>client certificate file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.connection_pool_maxsize">
+<span class="sig-name descname"><span class="pre">connection_pool_maxsize</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.connection_pool_maxsize" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>urllib3 connection pool’s maximum number of connections saved
+per pool. urllib3 uses 1 connection as default value, but this is
+not the best value when you are making a lot of possibly parallel
+requests to the same host, which is often the case here.
+cpu_count * 5 is used as default value to increase performance.</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.debug">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">debug</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.debug" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Debug switch</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.get_api_key_with_prefix">
+<span class="sig-name descname"><span class="pre">get_api_key_with_prefix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">identifier</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alias</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.get_api_key_with_prefix" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets API key (with prefix if set).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>identifier</strong> – The identifier of apiKey.</p></li>
+<li><p><strong>alias</strong> – The alternative identifier of apiKey.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Rückgabe</dt>
+<dd class="field-even"><p>The token for api key authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.get_basic_auth_token">
+<span class="sig-name descname"><span class="pre">get_basic_auth_token</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.get_basic_auth_token" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets HTTP basic authentication header (string).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe</dt>
+<dd class="field-odd"><p>The token for basic HTTP authentication.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.get_default_copy">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_default_copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.get_default_copy" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Return new instance of configuration.</p>
+<p>This method returns newly created, based on default constructor,
+object of Configuration class or returns a copy of default
+configuration passed by the set_default method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe</dt>
+<dd class="field-odd"><p>The configuration object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.get_host_from_settings">
+<span class="sig-name descname"><span class="pre">get_host_from_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variables</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">servers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.get_host_from_settings" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets host URL based on the index and variables
+:param index: array index of the host settings
+:param variables: hash of variable and the corresponding value
+:param servers: an array of host settings or None
+:return: URL based on host settings</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.get_host_settings">
+<span class="sig-name descname"><span class="pre">get_host_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.get_host_settings" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets an array of host settings</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe</dt>
+<dd class="field-odd"><p>An array of host settings</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.host">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">host</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.host" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Return generated host.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.key_file">
+<span class="sig-name descname"><span class="pre">key_file</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.key_file" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>client key file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.logger">
+<span class="sig-name descname"><span class="pre">logger</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.logger" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Logging Settings</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.logger_file">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logger_file</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.logger_file" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Debug file location</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.logger_file_handler">
+<span class="sig-name descname"><span class="pre">logger_file_handler</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.logger_file_handler" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Log file handler</p>
+</dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.logger_format">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">logger_format</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.logger_format" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Log format</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.logger_stream_handler">
+<span class="sig-name descname"><span class="pre">logger_stream_handler</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.logger_stream_handler" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Log stream handler</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.no_proxy">
+<span class="sig-name descname"><span class="pre">no_proxy</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.no_proxy" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>bypass proxy for host in the no_proxy list.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.password">
+<span class="sig-name descname"><span class="pre">password</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.password" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Password for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.proxy">
+<span class="sig-name descname"><span class="pre">proxy</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.proxy" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Proxy URL</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.proxy_headers">
+<span class="sig-name descname"><span class="pre">proxy_headers</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.proxy_headers" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Proxy headers</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.refresh_api_key_hook">
+<span class="sig-name descname"><span class="pre">refresh_api_key_hook</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.refresh_api_key_hook" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>function hook to refresh API key if expired</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.retries">
+<span class="sig-name descname"><span class="pre">retries</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.retries" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Adding retries to override urllib3 default value 3</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.safe_chars_for_path_param">
+<span class="sig-name descname"><span class="pre">safe_chars_for_path_param</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.safe_chars_for_path_param" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Safe chars for path_param</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.server_operation_index">
+<span class="sig-name descname"><span class="pre">server_operation_index</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.server_operation_index" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Default server index</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.server_operation_variables">
+<span class="sig-name descname"><span class="pre">server_operation_variables</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.server_operation_variables" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Default server variables</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.set_default">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">set_default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.set_default" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Set default instance of configuration.</p>
+<p>It stores default configuration, which can be
+returned by get_default_copy method.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><p><strong>default</strong> – object of Configuration</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.ssl_ca_cert">
+<span class="sig-name descname"><span class="pre">ssl_ca_cert</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.ssl_ca_cert" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Set this to customize the certificate file to verify the peer.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.temp_folder_path">
+<span class="sig-name descname"><span class="pre">temp_folder_path</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.temp_folder_path" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Temp file folder for downloading files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.to_debug_report">
+<span class="sig-name descname"><span class="pre">to_debug_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.to_debug_report" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Gets the essential information for debugging.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Rückgabe</dt>
+<dd class="field-odd"><p>The report for debugging.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.username">
+<span class="sig-name descname"><span class="pre">username</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.username" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Username for HTTP basic authentication</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="deutschland.autobahn.configuration.Configuration.verify_ssl">
+<span class="sig-name descname"><span class="pre">verify_ssl</span></span><a class="headerlink" href="#deutschland.autobahn.configuration.Configuration.verify_ssl" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>SSL/TLS verification
+Set this to false to skip verifying SSL certificate when calling API
+from https server.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-deutschland.autobahn.exceptions">
+<span id="deutschland-autobahn-exceptions-module"></span><h2>deutschland.autobahn.exceptions module<a class="headerlink" href="#module-deutschland.autobahn.exceptions" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Autobahn App API</p>
+<p>Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.0.0
+Contact: <a class="reference external" href="mailto:kontakt&#37;&#52;&#48;bund&#46;dev">kontakt<span>&#64;</span>bund<span>&#46;</span>dev</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ApiAttributeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ApiAttributeError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ApiAttributeError" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.OpenApiException" title="deutschland.autobahn.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">AttributeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ApiException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ApiException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ApiException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.OpenApiException" title="deutschland.autobahn.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.OpenApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ApiKeyError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ApiKeyError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ApiKeyError" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.OpenApiException" title="deutschland.autobahn.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">KeyError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ApiTypeError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ApiTypeError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_classes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ApiTypeError" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.OpenApiException" title="deutschland.autobahn.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">TypeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ApiValueError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ApiValueError</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ApiValueError" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.OpenApiException" title="deutschland.autobahn.exceptions.OpenApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.OpenApiException</span></code></a>, <code class="xref py py-class docutils literal notranslate"><span class="pre">ValueError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ForbiddenException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ForbiddenException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ForbiddenException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.ApiException" title="deutschland.autobahn.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.NotFoundException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">NotFoundException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.NotFoundException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.ApiException" title="deutschland.autobahn.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.OpenApiException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">OpenApiException</span></span><a class="headerlink" href="#deutschland.autobahn.exceptions.OpenApiException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The base exception class for all OpenAPIExceptions</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.ServiceException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">ServiceException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.ServiceException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.ApiException" title="deutschland.autobahn.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.UnauthorizedException">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">UnauthorizedException</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">http_resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.UnauthorizedException" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#deutschland.autobahn.exceptions.ApiException" title="deutschland.autobahn.exceptions.ApiException"><code class="xref py py-class docutils literal notranslate"><span class="pre">deutschland.autobahn.exceptions.ApiException</span></code></a></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deutschland.autobahn.exceptions.render_path">
+<span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.exceptions.</span></span><span class="sig-name descname"><span class="pre">render_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.exceptions.render_path" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Returns a string representation of a path</p>
+</dd></dl>
+
+</section>
+<section id="deutschland-autobahn-model-utils-module">
+<h2>deutschland.autobahn.model_utils module<a class="headerlink" href="#deutschland-autobahn-model-utils-module" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+<section id="module-deutschland.autobahn.rest">
+<span id="deutschland-autobahn-rest-module"></span><h2>deutschland.autobahn.rest module<a class="headerlink" href="#module-deutschland.autobahn.rest" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Autobahn App API</p>
+<p>Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.   # noqa: E501</p>
+<p>The version of the OpenAPI document: 1.0.0
+Contact: <a class="reference external" href="mailto:kontakt&#37;&#52;&#48;bund&#46;dev">kontakt<span>&#64;</span>bund<span>&#46;</span>dev</a>
+Generated by: <a class="reference external" href="https://openapi-generator.tech">https://openapi-generator.tech</a></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.rest.</span></span><span class="sig-name descname"><span class="pre">RESTClientObject</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">configuration</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pools_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.DELETE">
+<span class="sig-name descname"><span class="pre">DELETE</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.DELETE" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.GET">
+<span class="sig-name descname"><span class="pre">GET</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.GET" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.HEAD">
+<span class="sig-name descname"><span class="pre">HEAD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.HEAD" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.OPTIONS">
+<span class="sig-name descname"><span class="pre">OPTIONS</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.OPTIONS" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.PATCH">
+<span class="sig-name descname"><span class="pre">PATCH</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.PATCH" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.POST">
+<span class="sig-name descname"><span class="pre">POST</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.POST" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.PUT">
+<span class="sig-name descname"><span class="pre">PUT</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.PUT" title="Link zu dieser Definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTClientObject.request">
+<span class="sig-name descname"><span class="pre">request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">method</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_preload_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">_request_timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTClientObject.request" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Perform requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameter</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>method</strong> – http request method</p></li>
+<li><p><strong>url</strong> – http request url</p></li>
+<li><p><strong>query_params</strong> – query parameters in the url</p></li>
+<li><p><strong>headers</strong> – http request headers</p></li>
+<li><p><strong>body</strong> – request json body, for <cite>application/json</cite></p></li>
+<li><p><strong>post_params</strong> – request post parameters,
+<cite>application/x-www-form-urlencoded</cite>
+and <cite>multipart/form-data</cite></p></li>
+<li><p><strong>_preload_content</strong> – if False, the urllib3.HTTPResponse object will
+be returned without reading/decoding response
+data. Default is True.</p></li>
+<li><p><strong>_request_timeout</strong> – timeout setting for this request. If one
+number provided, it will be total request
+timeout. It can also be a pair (tuple) of
+(connection, read) timeouts.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTResponse">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.rest.</span></span><span class="sig-name descname"><span class="pre">RESTResponse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">resp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTResponse" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">io.IOBase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTResponse.getheader">
+<span class="sig-name descname"><span class="pre">getheader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTResponse.getheader" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Returns a given response header.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.RESTResponse.getheaders">
+<span class="sig-name descname"><span class="pre">getheaders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.RESTResponse.getheaders" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Returns a dictionary of the response headers.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.in_ipv4net">
+<span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.rest.</span></span><span class="sig-name descname"><span class="pre">in_ipv4net</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">net</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.in_ipv4net" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Test if target belongs to given IPv4 network</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.is_ipv4">
+<span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.rest.</span></span><span class="sig-name descname"><span class="pre">is_ipv4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.is_ipv4" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Test if IPv4 address or not</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="deutschland.autobahn.rest.should_bypass_proxies">
+<span class="sig-prename descclassname"><span class="pre">deutschland.autobahn.rest.</span></span><span class="sig-name descname"><span class="pre">should_bypass_proxies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_proxy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#deutschland.autobahn.rest.should_bypass_proxies" title="Link zu dieser Definition">¶</a></dt>
+<dd><p>Yet another requests.should_bypass_proxies
+Test if proxies should not be used for a particular url.</p>
+</dd></dl>
+
+</section>
+<section id="module-contents">
+<h2>Module contents<a class="headerlink" href="#module-contents" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">autobahn-api</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="deutschland.html">deutschland package</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="deutschland.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">deutschland.autobahn package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="deutschland.autobahn.api.html">deutschland.autobahn.api package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="deutschland.autobahn.apis.html">deutschland.autobahn.apis package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="deutschland.autobahn.model.html">deutschland.autobahn.model package</a></li>
+<li class="toctree-l5"><a class="reference internal" href="deutschland.autobahn.models.html">deutschland.autobahn.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deutschland-autobahn-api-client-module">deutschland.autobahn.api_client module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-deutschland.autobahn.configuration">deutschland.autobahn.configuration module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-deutschland.autobahn.exceptions">deutschland.autobahn.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deutschland-autobahn-model-utils-module">deutschland.autobahn.model_utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-deutschland.autobahn.rest">deutschland.autobahn.rest module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="deutschland.html#module-deutschland">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">deutschland.autobahn package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="deutschland.autobahn.api.html">deutschland.autobahn.api package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deutschland.autobahn.apis.html">deutschland.autobahn.apis package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deutschland.autobahn.model.html">deutschland.autobahn.model package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deutschland.autobahn.models.html">deutschland.autobahn.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deutschland-autobahn-api-client-module">deutschland.autobahn.api_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-deutschland.autobahn.configuration">deutschland.autobahn.configuration module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-deutschland.autobahn.exceptions">deutschland.autobahn.exceptions module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deutschland-autobahn-model-utils-module">deutschland.autobahn.model_utils module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-deutschland.autobahn.rest">deutschland.autobahn.rest module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-contents">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.api.html">deutschland.autobahn.api package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.apis.html">deutschland.autobahn.apis package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.model.html">deutschland.autobahn.model package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deutschland.autobahn.models.html">deutschland.autobahn.models package</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">deutschland</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="deutschland.html">deutschland package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="deutschland.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">deutschland.autobahn package</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="deutschland.autobahn.api.html">deutschland.autobahn.api package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="deutschland.autobahn.apis.html">deutschland.autobahn.apis package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="deutschland.autobahn.model.html">deutschland.autobahn.model package</a></li>
+<li class="toctree-l6"><a class="reference internal" href="deutschland.autobahn.models.html">deutschland.autobahn.models package</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#deutschland-autobahn-api-client-module">deutschland.autobahn.api_client module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-deutschland.autobahn.configuration">deutschland.autobahn.configuration module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-deutschland.autobahn.exceptions">deutschland.autobahn.exceptions module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#deutschland-autobahn-model-utils-module">deutschland.autobahn.model_utils module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-deutschland.autobahn.rest">deutschland.autobahn.rest module</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="deutschland.html#module-deutschland">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="deutschland.html">deutschland package</a><ul>
+      <li>Previous: <a href="deutschland.html" title="vorheriges Kapitel">deutschland package</a></li>
+      <li>Next: <a href="deutschland.autobahn.api.html" title="nächstes Kapitel">deutschland.autobahn.api package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Schnellsuche</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Los" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, bundesAPI.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 4.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/source/deutschland.autobahn.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
