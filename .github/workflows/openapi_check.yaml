@@ -60,7 +60,7 @@ jobs:
           run: |
             git config --local user.email "bundesAPI@users.noreply.github.com"
             git config --local user.name "bundesbot"
-            git add --force ${{ github.workspace }}/python-client
+            git add --force -- ${{ github.workspace }}/python-client ':!${{ github.workspace }}/python-client/sphinx-docs/_build'
             git commit -m "Generate newest code from openapi.yaml" -a
         - name: Push changes
           uses: ad-m/github-push-action@master
