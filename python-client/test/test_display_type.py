@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland import autobahn
+from deutschland from deutschland import autobahn
 from deutschland.autobahn.model.display_type import DisplayType
 
 

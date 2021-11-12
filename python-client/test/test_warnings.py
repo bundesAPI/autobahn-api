@@ -12,7 +12,7 @@
 import sys
 import unittest
 
-from deutschland import autobahn
+from deutschland from deutschland import autobahn
 from deutschland.autobahn.model.warning import Warning
 globals()['Warning'] = Warning
 from deutschland.autobahn.model.warnings import Warnings
