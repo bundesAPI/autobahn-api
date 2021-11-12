@@ -14,10 +14,6 @@ if __name__ == "__main__":
     
     os.chdir(DOC_FOLDER)
 
-    # install external extension m2r2, maybe remove from script and use requirements.txt
-    # currently m2r2 is not required because no markdown files are included, if removed also remove extension m2r2!
-    subprocess.check_call([sys.executable, "-m", "pip", "install", 'm2r2']) 
-
     # use sphinx-quickstart to create the initial setup
     subprocess.run(['sphinx-quickstart', '--project='+PROJECT, '--author='+AUTHOR, '-v', VERSION, '--language='+LANGUAGE, '--extensions=m2r2,sphinx.ext.autodoc,sphinx.ext.napoleon,sphinx.ext.autosummary', '-q'])
 
