@@ -56,6 +56,11 @@ jobs:
             pip install sphinx m2r2
             python create_doc.py
 
+        - uses: actions/upload-artifact@v2
+          with:
+            name: "documentation"
+            path: ${{ github.workspace }}/python-client/sphinx-docs/_build # or path/to/artifact
+
         - name: Add and Commit files
           run: |
             git config --local user.email "bundesAPI@users.noreply.github.com"
