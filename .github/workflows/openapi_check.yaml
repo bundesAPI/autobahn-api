@@ -92,11 +92,11 @@ jobs:
 
 
         # Upload to TestPyPI
-        - name: Upload to TestPyPI using twine
-          run: |
-            cd ${{ github.workspace }}/python-client
-            python -m twine upload dist/*
-          env:
-            TWINE_USERNAME: __token__
-            TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
-            TWINE_REPOSITORY: testpypi
+        #- name: Upload to TestPyPI using twine
+        #  run: |
+        #    cd ${{ github.workspace }}/python-client
+        #    python -m twine upload dist/*
+        #  env:
+        #    TWINE_USERNAME: __token__
+        #    TWINE_PASSWORD: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        #    TWINE_REPOSITORY: testpypi
