@@ -6,7 +6,7 @@ jobs:
       steps:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: Checkout
-          uses: wirthual/deutschland-generator-action@v0.0.1
+          uses: wirthual/deutschland-generator-action@v0.0.2
           with:
             version: 1.0.1
             package-name: "autobahn"
