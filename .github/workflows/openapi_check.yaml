@@ -39,7 +39,7 @@ jobs:
 
         - name: "execute py script" # run the run.py to get the latest data
           run: |
-            python rename_generated_code.py
+            python rename_generated_code.py autobahn
 
         - name: Print python-client dir after renaming and move it into the deutschland subfolder
           run: |
@@ -54,7 +54,7 @@ jobs:
         - name: "generate sphinx-documentation"
           run: |
             pip install sphinx m2r2
-            python create_doc.py
+            python create_doc.py autobahn 1.0.0 de
 
         - uses: actions/upload-artifact@v2
           with:

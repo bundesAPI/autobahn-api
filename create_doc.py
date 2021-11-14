@@ -1,5 +1,5 @@
 import os
-import sys
+from sys import argv
 import subprocess
 
 DOC_FOLDER = 'python-client/sphinx-docs'
@@ -9,6 +9,11 @@ VERSION = '0.0.1'
 LANGUAGE = 'de'
 
 if __name__ == "__main__":
+    (_,package_name,version,language) = argv
+    PROJECT = f"{package_name}-api"
+    VERSION = version
+    LANGUAGE = language
+
     if not os.path.exists(DOC_FOLDER):
         os.mkdir(DOC_FOLDER)
     

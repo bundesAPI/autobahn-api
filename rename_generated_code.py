@@ -1,10 +1,13 @@
 import distutils.dir_util
 import glob
 import os
+from sys import argv
 
 if __name__ == "__main__":
 
-    api = {"name": "autobahn"}
+    (_,package_name) = argv
+
+    api = {"name": package_name}
     generation_base_path = f"./python-client"
     generation_module_path = os.path.join(generation_base_path, api["name"])
 
