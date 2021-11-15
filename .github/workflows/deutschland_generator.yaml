@@ -11,6 +11,6 @@ jobs:
             version: 1.0.1
             package-name: "autobahn"
             openapi-file: ${{ github.workspace }}/openapi.yaml
-            upload-to-pypi: true
+            upload-to-pypi: false
             use-testpypi: true
             pypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
