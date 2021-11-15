@@ -6,7 +6,7 @@ jobs:
       steps:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - name: "Generate deutschland code"
-          uses: wirthual/deutschland-generator-action@v0.1.6
+          uses: wirthual/deutschland-generator-action@v0.1.7
           with:
             version: 1.0.1
             package-name: "autobahn"
