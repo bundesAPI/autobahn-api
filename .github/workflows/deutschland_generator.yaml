@@ -8,7 +8,7 @@ jobs:
         - name: "Generate deutschland code"
           uses: wirthual/deutschland-generator-action@v0.2.2
           with:
-            version: 1.0.2
+            version: 1.0.3
             package-name: "autobahn"
             openapi-file: ${{ github.workspace }}/openapi.yaml
             upload-to-pypi: false
