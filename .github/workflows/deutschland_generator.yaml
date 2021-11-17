@@ -3,24 +3,21 @@ jobs:
   deutschland_generation:
     name: "Deutschland Generation"
     runs-on: ubuntu-latest
-    code_generation:
-      name: "Deutschland code generation"
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
+    steps:
+      - uses: actions/checkout@v2
 
-        # Runs a single command using the runners shell
-        - name: swagger-cli
-          uses: vaibhav-jain/spectral-action/@v2.6
-          with:
-            file_path: openapi.yaml
+      # Runs a single command using the runners shell
+      - name: swagger-cli
+        uses: vaibhav-jain/spectral-action/@v2.6
+        with:
+          file_path: openapi.yaml
 
-        - name: "Generate deutschland code"
-          uses: wirthual/deutschland-generator-action@v0.2.3
-          with:
-            version: 1.0.3
-            package-name: "autobahn"
-            openapi-file: ${{ github.workspace }}/openapi.yaml
-            upload-to-pypi: false
-            use-testpypi: true
-            pypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
+      - name: "Generate deutschland code"
+        uses: wirthual/deutschland-generator-action@v0.2.3
+        with:
+          version: 1.0.3
+          package-name: "autobahn"
+          openapi-file: ${{ github.workspace }}/openapi.yaml
+          upload-to-pypi: false
+          use-testpypi: true
+          pypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
