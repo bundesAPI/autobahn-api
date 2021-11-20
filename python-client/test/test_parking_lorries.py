@@ -14,7 +14,8 @@ import unittest
 
 from deutschland import autobahn
 from deutschland.autobahn.model.parking_lorry import ParkingLorry
-globals()['ParkingLorry'] = ParkingLorry
+
+globals()["ParkingLorry"] = ParkingLorry
 from deutschland.autobahn.model.parking_lorries import ParkingLorries
 
 
@@ -34,5 +35,5 @@ class TestParkingLorries(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

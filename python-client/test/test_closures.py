@@ -14,7 +14,8 @@ import unittest
 
 from deutschland import autobahn
 from deutschland.autobahn.model.closure import Closure
-globals()['Closure'] = Closure
+
+globals()["Closure"] = Closure
 from deutschland.autobahn.model.closures import Closures
 
 
@@ -34,5 +35,5 @@ class TestClosures(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
