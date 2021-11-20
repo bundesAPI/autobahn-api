@@ -7,10 +7,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: swagger-cli
-        uses: vaibhav-jain/spectral-action/@v2.6
+      - name: "Lint file"
+        uses: stoplightio/spectral-action@v0.8.1
         with:
-          file_path: openapi.yaml
+            file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
         uses: wirthual/deutschland-generator-action@v0.2.3
