@@ -15,9 +15,16 @@ __version__ = "1.0.3"
 
 # import ApiClient
 from deutschland.autobahn.api_client import ApiClient
+
 # import Configuration
 from deutschland.autobahn.configuration import Configuration
+
 # import exceptions
-from deutschland.autobahn.exceptions import (ApiAttributeError, ApiException,
-                                             ApiKeyError, ApiTypeError,
-                                             ApiValueError, OpenApiException)
+from deutschland.autobahn.exceptions import (
+    ApiAttributeError,
+    ApiException,
+    ApiKeyError,
+    ApiTypeError,
+    ApiValueError,
+    OpenApiException,
+)

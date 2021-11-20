@@ -16,10 +16,10 @@ from deutschland.autobahn.api_client import ApiClient
 from deutschland.autobahn.api_client import Endpoint as _Endpoint
 from deutschland.autobahn.model.closure import Closure
 from deutschland.autobahn.model.closures import Closures
-from deutschland.autobahn.model.electric_charging_station import \
-    ElectricChargingStation
-from deutschland.autobahn.model.electric_charging_stations import \
-    ElectricChargingStations
+from deutschland.autobahn.model.electric_charging_station import ElectricChargingStation
+from deutschland.autobahn.model.electric_charging_stations import (
+    ElectricChargingStations,
+)
 from deutschland.autobahn.model.parking_lorries import ParkingLorries
 from deutschland.autobahn.model.parking_lorry import ParkingLorry
 from deutschland.autobahn.model.road_id import RoadId
@@ -31,8 +31,14 @@ from deutschland.autobahn.model.warnings import Warnings
 from deutschland.autobahn.model.webcam import Webcam
 from deutschland.autobahn.model.webcams import Webcams
 from deutschland.autobahn.model_utils import (  # noqa: F401
-    check_allowed_values, check_validations, date, datetime, file_type,
-    none_type, validate_and_convert_types)
+    check_allowed_values,
+    check_validations,
+    date,
+    datetime,
+    file_type,
+    none_type,
+    validate_and_convert_types,
+)
 
 
 class DefaultApi(object):

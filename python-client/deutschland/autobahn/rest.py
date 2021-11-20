@@ -19,11 +19,14 @@ from urllib.parse import urlencode, urlparse
 from urllib.request import proxy_bypass_environment
 
 import urllib3
-from deutschland.autobahn.exceptions import (ApiException, ApiValueError,
-                                             ForbiddenException,
-                                             NotFoundException,
-                                             ServiceException,
-                                             UnauthorizedException)
+from deutschland.autobahn.exceptions import (
+    ApiException,
+    ApiValueError,
+    ForbiddenException,
+    NotFoundException,
+    ServiceException,
+    UnauthorizedException,
+)
 
 logger = logging.getLogger(__name__)
 

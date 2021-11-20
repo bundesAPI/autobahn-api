@@ -13,8 +13,9 @@ import sys
 import unittest
 
 from deutschland import autobahn
-from deutschland.autobahn.model.lorry_parking_feature_icon import \
-    LorryParkingFeatureIcon
+from deutschland.autobahn.model.lorry_parking_feature_icon import (
+    LorryParkingFeatureIcon,
+)
 
 
 class TestLorryParkingFeatureIcon(unittest.TestCase):
