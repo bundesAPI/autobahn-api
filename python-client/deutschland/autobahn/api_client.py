@@ -9,35 +9,29 @@
 """
 
 
-import json
 import atexit
-import mimetypes
-from multiprocessing.pool import ThreadPool
 import io
+import json
+import mimetypes
 import os
 import re
 import typing
+from multiprocessing.pool import ThreadPool
 from urllib.parse import quote
-from urllib3.fields import RequestField
-
 
 from deutschland.autobahn import rest
 from deutschland.autobahn.configuration import Configuration
-from deutschland.autobahn.exceptions import ApiTypeError, ApiValueError, ApiException
-from deutschland.autobahn.model_utils import (
-    ModelNormal,
-    ModelSimple,
-    ModelComposed,
-    check_allowed_values,
-    check_validations,
-    date,
-    datetime,
-    deserialize_file,
-    file_type,
-    model_to_dict,
-    none_type,
-    validate_and_convert_types,
-)
+from deutschland.autobahn.exceptions import (ApiException, ApiTypeError,
+                                             ApiValueError)
+from deutschland.autobahn.model_utils import (ModelComposed, ModelNormal,
+                                              ModelSimple,
+                                              check_allowed_values,
+                                              check_validations, date,
+                                              datetime, deserialize_file,
+                                              file_type, model_to_dict,
+                                              none_type,
+                                              validate_and_convert_types)
+from urllib3.fields import RequestField
 
 
 class ApiClient(object):

@@ -13,11 +13,10 @@ import copy
 import logging
 import multiprocessing
 import sys
-import urllib3
-
 from http import client as http_client
-from deutschland.autobahn.exceptions import ApiValueError
 
+import urllib3
+from deutschland.autobahn.exceptions import ApiValueError
 
 JSON_SCHEMA_VALIDATION_KEYWORDS = {
     "multipleOf",

@@ -10,25 +10,20 @@
 
 
 import io
+import ipaddress
 import json
 import logging
 import re
 import ssl
-from urllib.parse import urlencode
-from urllib.parse import urlparse
+from urllib.parse import urlencode, urlparse
 from urllib.request import proxy_bypass_environment
+
 import urllib3
-import ipaddress
-
-from deutschland.autobahn.exceptions import (
-    ApiException,
-    UnauthorizedException,
-    ForbiddenException,
-    NotFoundException,
-    ServiceException,
-    ApiValueError,
-)
-
+from deutschland.autobahn.exceptions import (ApiException, ApiValueError,
+                                             ForbiddenException,
+                                             NotFoundException,
+                                             ServiceException,
+                                             UnauthorizedException)
 
 logger = logging.getLogger(__name__)
 

@@ -16,9 +16,8 @@ from deutschland import autobahn
 from deutschland.autobahn.model.coordinate import Coordinate
 from deutschland.autobahn.model.display_type import DisplayType
 from deutschland.autobahn.model.extent import Extent
-from deutschland.autobahn.model.lorry_parking_feature_icon import (
-    LorryParkingFeatureIcon,
-)
+from deutschland.autobahn.model.lorry_parking_feature_icon import \
+    LorryParkingFeatureIcon
 from deutschland.autobahn.model.multiline_text import MultilineText
 from deutschland.autobahn.model.point import Point
 from deutschland.autobahn.model.road_item import RoadItem
@@ -30,7 +29,8 @@ globals()["LorryParkingFeatureIcon"] = LorryParkingFeatureIcon
 globals()["MultilineText"] = MultilineText
 globals()["Point"] = Point
 globals()["RoadItem"] = RoadItem
-from deutschland.autobahn.model.electric_charging_station import ElectricChargingStation
+from deutschland.autobahn.model.electric_charging_station import \
+    ElectricChargingStation
 
 
 class TestElectricChargingStation(unittest.TestCase):

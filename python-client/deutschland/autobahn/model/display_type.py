@@ -12,22 +12,17 @@
 import re  # noqa: F401
 import sys  # noqa: F401
 
-from deutschland.autobahn.model_utils import (  # noqa: F401
-    ApiTypeError,
-    ModelComposed,
-    ModelNormal,
-    ModelSimple,
-    cached_property,
-    change_keys_js_to_python,
-    convert_js_args_to_python_args,
-    date,
-    datetime,
-    file_type,
-    none_type,
-    validate_get_composed_info,
-)
-from ..model_utils import OpenApiModel
 from deutschland.autobahn.exceptions import ApiAttributeError
+from deutschland.autobahn.model_utils import (ApiTypeError,  # noqa: F401
+                                              ModelComposed, ModelNormal,
+                                              ModelSimple, cached_property,
+                                              change_keys_js_to_python,
+                                              convert_js_args_to_python_args,
+                                              date, datetime, file_type,
+                                              none_type,
+                                              validate_get_composed_info)
+
+from ..model_utils import OpenApiModel
 
 
 class DisplayType(ModelSimple):
