@@ -21,8 +21,8 @@ VERSION = "1.0.3"
 # http://pypi.python.org/pypi/setuptools
 
 REQUIRES = [
-  "urllib3 >= 1.25.3",
-  "python-dateutil",
+    "urllib3 >= 1.25.3",
+    "python-dateutil",
 ]
 
 setup(
@@ -39,5 +39,5 @@ setup(
     include_package_data=True,
     long_description="""\
     Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.   # noqa: E501
-    """
+    """,
 )
