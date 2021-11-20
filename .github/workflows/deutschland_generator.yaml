@@ -13,7 +13,7 @@ jobs:
             file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
-        uses: wirthual/deutschland-generator-action@v0.5.0
+        uses: wirthual/deutschland-generator-action@v0.5.1
         with:
           version: 1.0.3
           package-name: "autobahn"
