@@ -7,8 +7,7 @@ jobs:
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
         - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      # Run Spectral
-      - uses: stoplightio/spectral-action@v0.8.1
-        with:
-          file_glob: ./openapi.yaml
+        # Run Spectral
+        - uses: stoplightio/spectral-action@v0.8.1
+          with:
+            file_glob: openapi.yaml
