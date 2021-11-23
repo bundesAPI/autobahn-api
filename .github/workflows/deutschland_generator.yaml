@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.6', '3.7.4', '3.8' ]
+        python-version: ['3.6', '3.7.8', '3.8','3.9.9' ]
     steps:
       - uses: actions/checkout@v2
 
@@ -17,7 +17,7 @@ jobs:
             file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
-        uses: wirthual/deutschland-generator-action@v0.5.2
+        uses: wirthual/deutschland-generator-action@v0.5.3
         with:
           version: 1.0.3
           package-name: "autobahn"
