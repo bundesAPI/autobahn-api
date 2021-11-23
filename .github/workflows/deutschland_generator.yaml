@@ -3,6 +3,9 @@ jobs:
   deutschland_generation:
     name: "Deutschland Generation"
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [ '3.5', '3.6', '3.7.4', '3.8' ]
     steps:
       - uses: actions/checkout@v2
 
@@ -13,7 +16,7 @@ jobs:
             file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
-        uses: wirthual/deutschland-generator-action@v0.5.1
+        uses: wirthual/deutschland-generator-action@v0.5.2
         with:
           version: 1.0.3
           package-name: "autobahn"
@@ -21,3 +24,4 @@ jobs:
           upload-to-pypi: false
           use-testpypi: true
           pypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          python-version: ${{ matrix.python-version }}
