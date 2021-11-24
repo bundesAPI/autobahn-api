@@ -9,7 +9,7 @@
 """
 
 
-from setuptools import find_packages, setup  # noqa: H301
+from setuptools import find_namespace_packages, setup  # noqa: H301
 
 NAME = "autobahn"
 VERSION = "1.0.3"
@@ -35,7 +35,7 @@ setup(
     keywords=["OpenAPI", "OpenAPI-Generator", "Autobahn App API"],
     python_requires=">=3.6",
     install_requires=REQUIRES,
-    packages=find_packages(exclude=["test", "tests"]),
+    packages=find_namespace_packages("deutschland.autobahn"),
     include_package_data=True,
     long_description="""\
     Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.   # noqa: E501
