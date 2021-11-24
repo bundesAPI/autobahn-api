@@ -1,4 +1,4 @@
-templateDir: ./local/deutschland_templates
+templateDir: deutschland_templates # For local use: ./local/deutschland_templates
 additionalProperties:
   packageName: "autobahn"
   infoName: "BundesAPI"
