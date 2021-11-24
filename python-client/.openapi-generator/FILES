@@ -39,6 +39,7 @@ autobahn/model/webcams.py
 autobahn/model_utils.py
 autobahn/models/__init__.py
 autobahn/rest.py
+create_doc.py
 docs/Closure.md
 docs/Closures.md
 docs/Coordinate.md
@@ -66,6 +67,9 @@ docs/Webcam.md
 docs/WebcamAllOf.md
 docs/Webcams.md
 git_push.sh
+pyproject.toml
+rename_generated_code.py
+requirements.txt
 requirements.txt
 setup.cfg
 setup.py
