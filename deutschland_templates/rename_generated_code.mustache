@@ -2,6 +2,8 @@ import distutils.dir_util
 import glob
 import os
 from sys import argv
+import pathlib
+import shutil
 
 PACKAGE_NAME = "{{packageName}}"
 
@@ -32,3 +34,7 @@ if __name__ == "__main__":
             )
             with open(filepath, "w") as file:
                 file.write(s)
+
+    # Copy code to namespace package
+    pathlib.Path("./{{namespace}}").mkdir(parents=True, exist_ok=True)
+    shutil.move(api["name"],"{{namespace}}")c
