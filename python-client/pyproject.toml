@@ -1,0 +1,29 @@
+[tool]
+[tool.poetry]
+name = "autobahn"
+version = "1.0.3"
+description = "Autobahn App API"
+keywords = ["OpenAPI", "OpenAPI-Generator", "autobahn", "App", "API"]
+homepage = "https://github.com/bundesAPI/autobahn-api"
+authors = ["BundesAPI <kontakt@bund.dev>"]
+packages = [
+  { include = "deutschland"}
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+python-dateutil = "*"
+urllib3 = ">=1.25.3"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/bundesAPI/autobahn-api/issues"
+
+[tool.poetry.dev-dependencies]
+black = "^21.7b0"
+pytest = "^6.2.4"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
