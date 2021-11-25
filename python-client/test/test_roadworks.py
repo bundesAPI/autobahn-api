@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.roadwork import Roadwork
+
+from deutschland import autobahn
 
 globals()["Roadwork"] = Roadwork
 from deutschland.autobahn.model.roadworks import Roadworks

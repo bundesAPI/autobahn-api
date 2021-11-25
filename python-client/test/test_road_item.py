@@ -12,7 +12,6 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.coordinate import Coordinate
 from deutschland.autobahn.model.display_type import DisplayType
 from deutschland.autobahn.model.extent import Extent
@@ -21,6 +20,8 @@ from deutschland.autobahn.model.lorry_parking_feature_icon import (
 )
 from deutschland.autobahn.model.multiline_text import MultilineText
 from deutschland.autobahn.model.point import Point
+
+from deutschland import autobahn
 
 globals()["Coordinate"] = Coordinate
 globals()["DisplayType"] = DisplayType

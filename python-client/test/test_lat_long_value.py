@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.lat_long_value import LatLongValue
+
+from deutschland import autobahn
 
 
 class TestLatLongValue(unittest.TestCase):

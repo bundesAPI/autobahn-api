@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.extent import Extent
+
+from deutschland import autobahn
 
 
 class TestExtent(unittest.TestCase):

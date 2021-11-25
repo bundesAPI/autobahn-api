@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.point import Point
+
+from deutschland import autobahn
 
 
 class TestPoint(unittest.TestCase):

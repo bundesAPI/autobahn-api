@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.road_id import RoadId
+
+from deutschland import autobahn
 
 
 class TestRoadId(unittest.TestCase):

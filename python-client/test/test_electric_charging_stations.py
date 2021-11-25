@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.electric_charging_station import ElectricChargingStation
+
+from deutschland import autobahn
 
 globals()["ElectricChargingStation"] = ElectricChargingStation
 from deutschland.autobahn.model.electric_charging_stations import (
