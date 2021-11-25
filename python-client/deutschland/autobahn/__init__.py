@@ -11,7 +11,7 @@
 """
 
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 # import ApiClient
 from deutschland.autobahn.api_client import ApiClient
