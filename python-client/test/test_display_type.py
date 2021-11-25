@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.display_type import DisplayType
+
+from deutschland import autobahn
 
 
 class TestDisplayType(unittest.TestCase):

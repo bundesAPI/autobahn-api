@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.multiline_text import MultilineText
+
+from deutschland import autobahn
 
 
 class TestMultilineText(unittest.TestCase):
