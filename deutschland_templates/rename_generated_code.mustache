@@ -10,10 +10,10 @@ PACKAGE_NAME = "{{packageName}}"
 if __name__ == "__main__":
 
     api = {"name": PACKAGE_NAME}
-    generation_base_path = "./"
+    generation_base_path = "./python-client"
     generation_module_path = os.path.join(generation_base_path, api["name"])
 
-    destination_path = os.path.join(".python-client/deutschland/", api["name"])
+    destination_path = os.path.join(f"{generation_base_path}/{{namespace}}/", api["name"])
 
     # Go through generated package and make imports relative to {{namespace}} package in all files ending with .py and .md
     file_types_for_substitution = [".py", ".md"]
