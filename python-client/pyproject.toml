@@ -1,6 +1,6 @@
 [tool]
 [tool.poetry]
-name = "autobahn"
+name = "de-autobahn"
 version = "1.0.4"
 description = "Autobahn App API"
 keywords = ["OpenAPI", "OpenAPI-Generator", "autobahn", "App", "API"]
