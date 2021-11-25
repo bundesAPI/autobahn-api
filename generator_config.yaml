@@ -3,7 +3,7 @@ additionalProperties:
   packageName: "autobahn"
   infoName: "BundesAPI"
   infoEmail: "kontakt@bund.dev"
-  packageVersion: 1.0.3
+  packageVersion: 1.0.4
   packageUrl: "https://github.com/bundesAPI/autobahn-api"
   namespace: "deutschland"
   docLanguage: "de"
