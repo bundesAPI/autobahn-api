@@ -1,0 +1,20 @@
+templateDir: deutschland_templates # For local use: ./local/deutschland_templates
+additionalProperties:
+  packageName: "autobahn"
+  infoName: "BundesAPI"
+  infoEmail: "kontakt@bund.dev"
+  packageVersion: 1.0.4
+  packageUrl: "https://github.com/bundesAPI/autobahn-api"
+  namespace: "deutschland"
+  docLanguage: "de"
+files:
+  pyproject.mustache:
+    destinationFilename: pyproject.toml
+    templateType: SupportingFiles
+  requirements.txt: {}
+  create_doc.mustache:
+    destinationFilename: create_doc.py
+    templateType: SupportingFiles
+  rename_generated_code.mustache:
+    destinationFilename: rename_generated_code.py
+    templateType: SupportingFiles

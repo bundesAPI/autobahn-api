@@ -1,0 +1,26 @@
+on: [push, pull_request]
+jobs:
+  deutschland_generation:
+    name: "Deutschland Generation"
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.7.8' ]
+    steps:
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: "Lint file"
+        uses: stoplightio/spectral-action@v0.8.1
+        with:
+            file_glob: "openapi.yaml"
+
+      - name: "Generate deutschland code"
+        uses: wirthual/deutschland-generator-action@v0.7.0
+        with:
+          openapi-file: ${{ github.workspace }}/openapi.yaml
+          upload-to-pypi: false
+          use-testpypi: false
+          pypi-token: ${{ secrets.PYPI_API_TOKEN }}
+          python-version: ${{ matrix.python-version }}
