@@ -18,6 +18,7 @@ from deutschland.autobahn.model_utils import (  # noqa: F401
     ModelComposed,
     ModelNormal,
     ModelSimple,
+    OpenApiModel,
     cached_property,
     change_keys_js_to_python,
     convert_js_args_to_python_args,
@@ -27,8 +28,6 @@ from deutschland.autobahn.model_utils import (  # noqa: F401
     none_type,
     validate_get_composed_info,
 )
-
-from ..model_utils import OpenApiModel
 
 
 class RoadId(ModelSimple):
