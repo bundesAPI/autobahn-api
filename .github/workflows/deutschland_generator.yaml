@@ -17,9 +17,10 @@ jobs:
             file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
-        uses: wirthual/deutschland-generator-action@v0.8.0
+        uses: wirthual/deutschland-generator-action@v0.8.1
         with:
           openapi-file: ${{ github.workspace }}/openapi.yaml
+          commit-to-git: true
           upload-to-pypi: false
           upload-to-testpypi: true
           pypi-token: ${{ secrets.PYPI_API_TOKEN }}
