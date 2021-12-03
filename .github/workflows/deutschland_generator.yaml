@@ -23,5 +23,5 @@ jobs:
           upload-to-pypi: false
           upload-to-testpypi: true
           pypi-token: ${{ secrets.PYPI_API_TOKEN }}
-          testpypi-token: ${{ secrets.TESTPYPI_API_TOKEN }}
+          testpypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
           python-version: ${{ matrix.python-version }}

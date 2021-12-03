@@ -7,6 +7,9 @@ additionalProperties:
   packageUrl: "https://github.com/bundesAPI/autobahn-api"
   namespace: "deutschland"
   docLanguage: "de"
+  gitHost: "github.com"
+  gitUserId: "bundesAPI"
+  gitRepoId: "autobahn-api"
 files:
   pyproject.mustache:
     destinationFilename: pyproject.toml
