@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.road_event_all_of import RoadEventAllOf
+
+from deutschland import autobahn
 
 
 class TestRoadEventAllOf(unittest.TestCase):
@@ -32,5 +33,5 @@ class TestRoadEventAllOf(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

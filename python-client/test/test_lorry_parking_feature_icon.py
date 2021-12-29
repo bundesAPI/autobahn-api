@@ -12,8 +12,11 @@
 import sys
 import unittest
 
+from deutschland.autobahn.model.lorry_parking_feature_icon import (
+    LorryParkingFeatureIcon,
+)
+
 from deutschland import autobahn
-from deutschland.autobahn.model.lorry_parking_feature_icon import LorryParkingFeatureIcon
 
 
 class TestLorryParkingFeatureIcon(unittest.TestCase):
@@ -32,5 +35,5 @@ class TestLorryParkingFeatureIcon(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

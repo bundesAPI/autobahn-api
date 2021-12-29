@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.road_id import RoadId
+
+from deutschland import autobahn
 
 
 class TestRoadId(unittest.TestCase):
@@ -32,5 +33,5 @@ class TestRoadId(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

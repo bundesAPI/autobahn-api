@@ -12,9 +12,11 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.webcam import Webcam
-globals()['Webcam'] = Webcam
+
+from deutschland import autobahn
+
+globals()["Webcam"] = Webcam
 from deutschland.autobahn.model.webcams import Webcams
 
 
@@ -34,5 +36,5 @@ class TestWebcams(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
