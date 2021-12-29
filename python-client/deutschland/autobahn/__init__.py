@@ -20,9 +20,11 @@ from deutschland.autobahn.api_client import ApiClient
 from deutschland.autobahn.configuration import Configuration
 
 # import exceptions
-from deutschland.autobahn.exceptions import OpenApiException
-from deutschland.autobahn.exceptions import ApiAttributeError
-from deutschland.autobahn.exceptions import ApiTypeError
-from deutschland.autobahn.exceptions import ApiValueError
-from deutschland.autobahn.exceptions import ApiKeyError
-from deutschland.autobahn.exceptions import ApiException
+from deutschland.autobahn.exceptions import (
+    ApiAttributeError,
+    ApiException,
+    ApiKeyError,
+    ApiTypeError,
+    ApiValueError,
+    OpenApiException,
+)

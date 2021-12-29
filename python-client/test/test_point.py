@@ -12,8 +12,9 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.point import Point
+
+from deutschland import autobahn
 
 
 class TestPoint(unittest.TestCase):
@@ -32,5 +33,5 @@ class TestPoint(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()

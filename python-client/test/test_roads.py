@@ -12,9 +12,11 @@
 import sys
 import unittest
 
-from deutschland import autobahn
 from deutschland.autobahn.model.road_id import RoadId
-globals()['RoadId'] = RoadId
+
+from deutschland import autobahn
+
+globals()["RoadId"] = RoadId
 from deutschland.autobahn.model.roads import Roads
 
 
@@ -34,5 +36,5 @@ class TestRoads(unittest.TestCase):
         pass
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
