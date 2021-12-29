@@ -12,9 +12,8 @@
 import sys
 import unittest
 
-from deutschland.autobahn.model.lat_long_value import LatLongValue
-
 from deutschland import autobahn
+from deutschland.autobahn.model.lat_long_value import LatLongValue
 
 
 class TestLatLongValue(unittest.TestCase):
@@ -33,5 +32,5 @@ class TestLatLongValue(unittest.TestCase):
         pass
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

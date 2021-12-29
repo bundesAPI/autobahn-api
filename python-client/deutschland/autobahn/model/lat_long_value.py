@@ -12,13 +12,11 @@
 import re  # noqa: F401
 import sys  # noqa: F401
 
-from deutschland.autobahn.exceptions import ApiAttributeError
 from deutschland.autobahn.model_utils import (  # noqa: F401
     ApiTypeError,
     ModelComposed,
     ModelNormal,
     ModelSimple,
-    OpenApiModel,
     cached_property,
     change_keys_js_to_python,
     convert_js_args_to_python_args,
@@ -28,6 +26,9 @@ from deutschland.autobahn.model_utils import (  # noqa: F401
     none_type,
     validate_get_composed_info,
 )
+from ..model_utils import OpenApiModel
+from deutschland.autobahn.exceptions import ApiAttributeError
+
 
 
 class LatLongValue(ModelSimple):
@@ -50,17 +51,24 @@ class LatLongValue(ModelSimple):
           as additional properties values.
     """
 
-    allowed_values = {}
+    allowed_values = {
+    }
 
     validations = {
-        ("value",): {
-            "regex": {
-                "pattern": r"",  # noqa: E501
+        ('value',): {
+            'regex': {
+                'pattern': r'',  # noqa: E501
             },
         },
     }
 
-    additional_properties_type = None
+    @cached_property
+    def additional_properties_type():
+        """
+        This must be a method because a model may have properties that are
+        of type self, this must run after the class is loaded
+        """
+        return (bool, date, datetime, dict, float, int, list, str, none_type,)  # noqa: E501
 
     _nullable = False
 
@@ -75,12 +83,13 @@ class LatLongValue(ModelSimple):
                 and the value is attribute type.
         """
         return {
-            "value": (str,),
+            'value': (str,),
         }
 
     @cached_property
     def discriminator():
         return None
+
 
     attribute_map = {}
 
@@ -88,16 +97,14 @@ class LatLongValue(ModelSimple):
 
     _composed_schemas = None
 
-    required_properties = set(
-        [
-            "_data_store",
-            "_check_type",
-            "_spec_property_naming",
-            "_path_to_item",
-            "_configuration",
-            "_visited_composed_classes",
-        ]
-    )
+    required_properties = set([
+        '_data_store',
+        '_check_type',
+        '_spec_property_naming',
+        '_path_to_item',
+        '_configuration',
+        '_visited_composed_classes',
+    ])
 
     @convert_js_args_to_python_args
     def __init__(self, *args, **kwargs):
@@ -142,10 +149,10 @@ class LatLongValue(ModelSimple):
                                 _visited_composed_classes = (Animal,)
         """
         # required up here when default value is not given
-        _path_to_item = kwargs.pop("_path_to_item", ())
+        _path_to_item = kwargs.pop('_path_to_item', ())
 
-        if "value" in kwargs:
-            value = kwargs.pop("value")
+        if 'value' in kwargs:
+            value = kwargs.pop('value')
         elif args:
             args = list(args)
             value = args.pop(0)
@@ -156,15 +163,14 @@ class LatLongValue(ModelSimple):
                 valid_classes=(self.__class__,),
             )
 
-        _check_type = kwargs.pop("_check_type", True)
-        _spec_property_naming = kwargs.pop("_spec_property_naming", False)
-        _configuration = kwargs.pop("_configuration", None)
-        _visited_composed_classes = kwargs.pop("_visited_composed_classes", ())
+        _check_type = kwargs.pop('_check_type', True)
+        _spec_property_naming = kwargs.pop('_spec_property_naming', False)
+        _configuration = kwargs.pop('_configuration', None)
+        _visited_composed_classes = kwargs.pop('_visited_composed_classes', ())
 
         if args:
             raise ApiTypeError(
-                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments."
-                % (
+                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments." % (
                     args,
                     self.__class__.__name__,
                 ),
@@ -181,8 +187,7 @@ class LatLongValue(ModelSimple):
         self.value = value
         if kwargs:
             raise ApiTypeError(
-                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments."
-                % (
+                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments." % (
                     kwargs,
                     self.__class__.__name__,
                 ),
@@ -234,12 +239,12 @@ class LatLongValue(ModelSimple):
                                 _visited_composed_classes = (Animal,)
         """
         # required up here when default value is not given
-        _path_to_item = kwargs.pop("_path_to_item", ())
+        _path_to_item = kwargs.pop('_path_to_item', ())
 
         self = super(OpenApiModel, cls).__new__(cls)
 
-        if "value" in kwargs:
-            value = kwargs.pop("value")
+        if 'value' in kwargs:
+            value = kwargs.pop('value')
         elif args:
             args = list(args)
             value = args.pop(0)
@@ -250,15 +255,14 @@ class LatLongValue(ModelSimple):
                 valid_classes=(self.__class__,),
             )
 
-        _check_type = kwargs.pop("_check_type", True)
-        _spec_property_naming = kwargs.pop("_spec_property_naming", False)
-        _configuration = kwargs.pop("_configuration", None)
-        _visited_composed_classes = kwargs.pop("_visited_composed_classes", ())
+        _check_type = kwargs.pop('_check_type', True)
+        _spec_property_naming = kwargs.pop('_spec_property_naming', False)
+        _configuration = kwargs.pop('_configuration', None)
+        _visited_composed_classes = kwargs.pop('_visited_composed_classes', ())
 
         if args:
             raise ApiTypeError(
-                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments."
-                % (
+                "Invalid positional arguments=%s passed to %s. Remove those invalid positional arguments." % (
                     args,
                     self.__class__.__name__,
                 ),
@@ -275,8 +279,7 @@ class LatLongValue(ModelSimple):
         self.value = value
         if kwargs:
             raise ApiTypeError(
-                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments."
-                % (
+                "Invalid named arguments=%s passed to %s. Remove those invalid named arguments." % (
                     kwargs,
                     self.__class__.__name__,
                 ),

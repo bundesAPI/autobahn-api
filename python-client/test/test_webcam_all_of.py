@@ -12,9 +12,8 @@
 import sys
 import unittest
 
-from deutschland.autobahn.model.webcam_all_of import WebcamAllOf
-
 from deutschland import autobahn
+from deutschland.autobahn.model.webcam_all_of import WebcamAllOf
 
 
 class TestWebcamAllOf(unittest.TestCase):
@@ -33,5 +32,5 @@ class TestWebcamAllOf(unittest.TestCase):
         pass
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

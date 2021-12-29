@@ -21,3 +21,6 @@ files:
   rename_generated_code.mustache:
     destinationFilename: rename_generated_code.py
     templateType: SupportingFiles
+  README.mustache:
+    destinationFilename: README.md
+    templateType: SupportingFiles

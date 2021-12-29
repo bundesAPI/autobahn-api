@@ -12,11 +12,9 @@
 import sys
 import unittest
 
-from deutschland.autobahn.model.warning import Warning
-
 from deutschland import autobahn
-
-globals()["Warning"] = Warning
+from deutschland.autobahn.model.warning import Warning
+globals()['Warning'] = Warning
 from deutschland.autobahn.model.warnings import Warnings
 
 
@@ -36,5 +34,5 @@ class TestWarnings(unittest.TestCase):
         pass
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()

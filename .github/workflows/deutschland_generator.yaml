@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: [push]
 jobs:
   deutschland_generation:
     name: "Deutschland Generation"
@@ -10,6 +10,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      # Create default .spectral.yaml file used for linting if its not existing already
+      - name: "Create spectral file if it not exists"
+        continue-on-error: true
+        run: |
+           set -C; echo "extends: spectral:oas" > .spectral.yaml
+
       # Runs a single command using the runners shell
       - name: "Lint file"
         uses: stoplightio/spectral-action@v0.8.1
@@ -17,12 +23,12 @@ jobs:
             file_glob: "openapi.yaml"
 
       - name: "Generate deutschland code"
-        uses: wirthual/deutschland-generator-action@v0.8.1
+        uses: wirthual/deutschland-generator-action@latest
         with:
           openapi-file: ${{ github.workspace }}/openapi.yaml
           commit-to-git: true
-          upload-to-pypi: false
-          upload-to-testpypi: true
+          upload-to-pypi: true
+          upload-to-testpypi: false
           pypi-token: ${{ secrets.PYPI_API_TOKEN }}
           testpypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
           python-version: ${{ matrix.python-version }}
