@@ -58,7 +58,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "Uk9BRFdPUktTX19tZG0ubndfXzAyLTgwMDAwIEQgNzEgMTkgMDkvS0xCV1JO"
       responses:
         "200":
@@ -111,7 +111,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "V0VCQ0FNX19OUldfU2lsYS1TaWduYWxiYXVfMTAxMDgxNDE3MjM4ODYzOTk5MTU="
       responses:
         "200":
@@ -163,7 +163,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA=="
       responses:
         "200":
@@ -215,7 +215,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "V0FSTklOR19fbWRtLnZpel9fTE1TLU5XL3JfTE1TLU5XLzMyNDE3OV9EICBOVyBMTVMtTlcuMA=="
       responses:
         "200":
@@ -267,7 +267,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "Q0xPU1VSRV9fbWRtLnZpel9fTE1TLU5XL3JfVElDLU5SV0JMSy8zOS9OUldCTEsvMTAgMzUgMjEgRCAwOTI0Mi0wMV9EICBOVyBMTVMtTlcuMA=="
       responses:
         "200":
@@ -319,7 +319,7 @@ paths:
           required: true
           schema:
             type: string
-            format: base64
+            format: byte
             example: "RUxFQ1RSSUNfQ0hBUkdJTkdfU1RBVElPTl9fMTczMzM="
       responses:
         "200":
@@ -379,7 +379,7 @@ components:
 
     Identifier:
       type: string
-      format: base64
+      format: byte
 
     MultilineText:
       type: array
