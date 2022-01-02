@@ -21,7 +21,7 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Roads"
-                
+
   /{roadId}/services/roadworks:
     get:
       operationId: list-roadworks
