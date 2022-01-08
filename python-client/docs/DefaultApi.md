@@ -46,7 +46,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    station_id = "RUxFQ1RSSUNfQ0hBUkdJTkdfU1RBVElPTl9fMTczMzM=" # str | 
+    station_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -116,7 +116,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    closure_id = "Q0xPU1VSRV9fbWRtLnZpel9fTE1TLU5XL3JfVElDLU5SV0JMSy8zOS9OUldCTEsvMTAgMzUgMjEgRCAwOTI0Mi0wMV9EICBOVyBMTVMtTlcuMA==" # str | 
+    closure_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -186,7 +186,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    lorry_id = "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA==" # str | 
+    lorry_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -256,7 +256,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    roadwork_id = "Uk9BRFdPUktTX19tZG0ubndfXzAyLTgwMDAwIEQgNzEgMTkgMDkvS0xCV1JO" # str | 
+    roadwork_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -326,7 +326,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    warning_id = "V0FSTklOR19fbWRtLnZpel9fTE1TLU5XL3JfTE1TLU5XLzMyNDE3OV9EICBOVyBMTVMtTlcuMA==" # str | 
+    warning_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -396,7 +396,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    webcam_id = "V0VCQ0FNX19OUldfU2lsYS1TaWduYWxiYXVfMTAxMDgxNDE3MjM4ODYzOTk5MTU=" # str | 
+    webcam_id = 'YQ==' # str | 
 
     # example passing only required values which don't have defaults set
     try:

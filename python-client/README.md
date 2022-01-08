@@ -77,7 +77,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    station_id = "RUxFQ1RSSUNfQ0hBUkdJTkdfU1RBVElPTl9fMTczMzM=" # str | 
+    station_id = 'YQ==' # str | 
 
     try:
         # Details zu einer Ladestation

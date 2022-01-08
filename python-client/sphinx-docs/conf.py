@@ -22,7 +22,7 @@ sys.path.insert(0, os.path.abspath("../"))
 # -- Project information -----------------------------------------------------
 
 project = "autobahn-api"
-copyright = "2021, BundesAPI"
+copyright = "2022, BundesAPI"
 author = "BundesAPI"
 
 # The short X.Y version
