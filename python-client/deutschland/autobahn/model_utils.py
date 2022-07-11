@@ -15,6 +15,7 @@ import os
 import pprint
 import re
 import tempfile
+import uuid
 from copy import deepcopy
 from datetime import date, datetime  # noqa: F401
 
@@ -187,7 +188,7 @@ class OpenApiModel(object):
         if self.get("_spec_property_naming", False):
             return cls._new_from_openapi_data(**self.__dict__)
         else:
-            return new_cls.__new__(cls, **self.__dict__)
+            return cls.__new__(cls, **self.__dict__)
 
     def __deepcopy__(self, memo):
         cls = self.__class__
@@ -724,10 +725,8 @@ COERCION_INDEX_BY_TYPE = {
 UPCONVERSION_TYPE_PAIRS = (
     (str, datetime),
     (str, date),
-    (
-        int,
-        float,
-    ),  # A float may be serialized as an integer, e.g. '3' is a valid serialized float.
+    # A float may be serialized as an integer, e.g. '3' is a valid serialized float.
+    (int, float),
     (list, ModelComposed),
     (dict, ModelComposed),
     (str, ModelComposed),
@@ -1404,8 +1403,13 @@ def deserialize_file(response_data, configuration, content_disposition=None):
 
     if content_disposition:
         filename = re.search(
-            r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition
-        ).group(1)
+            r'filename=[\'"]?([^\'"\s]+)[\'"]?', content_disposition, flags=re.I
+        )
+        if filename is not None:
+            filename = filename.group(1)
+        else:
+            filename = "default_" + str(uuid.uuid4())
+
         path = os.path.join(os.path.dirname(path), filename)
 
     with open(path, "wb") as f:
@@ -1602,7 +1606,7 @@ def validate_and_convert_types(
     input_class_simple = get_simple_class(input_value)
     valid_type = is_valid_type(input_class_simple, valid_classes)
     if not valid_type:
-        if configuration:
+        if configuration or (input_class_simple == dict and dict not in valid_classes):
             # if input_value is not valid_type try to convert it
             converted_instance = attempt_convert_item(
                 input_value,
@@ -1697,6 +1701,13 @@ def model_to_dict(model_instance, serialize=True):
     """
     result = {}
 
+    def extract_item(item):
+        return (
+            (item[0], model_to_dict(item[1], serialize=serialize))
+            if hasattr(item[1], "_data_store")
+            else item
+        )
+
     model_instances = [model_instance]
     if model_instance._composed_schemas:
         model_instances.extend(model_instance._composed_instances)
@@ -1725,21 +1736,13 @@ def model_to_dict(model_instance, serialize=True):
                             res.append(v)
                         elif isinstance(v, ModelSimple):
                             res.append(v.value)
+                        elif isinstance(v, dict):
+                            res.append(dict(map(extract_item, v.items())))
                         else:
                             res.append(model_to_dict(v, serialize=serialize))
                     result[attr] = res
             elif isinstance(value, dict):
-                result[attr] = dict(
-                    map(
-                        lambda item: (
-                            item[0],
-                            model_to_dict(item[1], serialize=serialize),
-                        )
-                        if hasattr(item[1], "_data_store")
-                        else item,
-                        value.items(),
-                    )
-                )
+                result[attr] = dict(map(extract_item, value.items()))
             elif isinstance(value, ModelSimple):
                 result[attr] = value.value
             elif hasattr(value, "_data_store"):
@@ -2076,7 +2079,9 @@ def validate_get_composed_info(constant_args, model_args, self):
     var_name_to_model_instances = {}
     for prop_name in model_args:
         if prop_name not in discarded_args:
-            var_name_to_model_instances[prop_name] = [self] + composed_instances
+            var_name_to_model_instances[prop_name] = [self] + list(
+                filter(lambda x: prop_name in x.openapi_types, composed_instances)
+            )
 
     return [
         composed_instances,

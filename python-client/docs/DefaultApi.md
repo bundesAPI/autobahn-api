@@ -517,7 +517,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.electric_charging_stations import ElectricChargingStations
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -530,7 +529,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -546,7 +545,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 
@@ -588,7 +587,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.closures import Closures
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -601,7 +599,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -617,7 +615,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 
@@ -659,7 +657,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.parking_lorries import ParkingLorries
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -672,7 +669,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -688,7 +685,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 
@@ -730,7 +727,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.roadworks import Roadworks
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -743,7 +739,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -759,7 +755,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 
@@ -801,7 +797,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.warnings import Warnings
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -814,7 +809,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -830,7 +825,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 
@@ -872,7 +867,6 @@ import time
 from deutschland import autobahn
 from deutschland.autobahn.api import default_api
 from deutschland.autobahn.model.webcams import Webcams
-from deutschland.autobahn.model.road_id import RoadId
 from pprint import pprint
 # Defining the host is optional and defaults to https://verkehr.autobahn.de/o/autobahn
 # See configuration.py for a list of all supported configuration parameters.
@@ -885,7 +879,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # RoadId | 
+    road_id = RoadId("A1") # str | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -901,7 +895,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **RoadId**|  |
+ **road_id** | **str**|  |
 
 ### Return type
 

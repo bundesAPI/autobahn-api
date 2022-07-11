@@ -57,7 +57,6 @@ from deutschland.autobahn.model.electric_charging_station import ElectricChargin
 from deutschland.autobahn.model.electric_charging_stations import ElectricChargingStations
 from deutschland.autobahn.model.parking_lorries import ParkingLorries
 from deutschland.autobahn.model.parking_lorry import ParkingLorry
-from deutschland.autobahn.model.road_id import RoadId
 from deutschland.autobahn.model.roads import Roads
 from deutschland.autobahn.model.roadwork import Roadwork
 from deutschland.autobahn.model.roadworks import Roadworks
