@@ -15,10 +15,9 @@ jobs:
         continue-on-error: true
         run: |
            set -C; echo "extends: spectral:oas" > .spectral.yaml
-
       # Runs a single command using the runners shell
       - name: "Lint file"
-        uses: stoplightio/spectral-action@v0.8.1
+        uses: stoplightio/spectral-action@v0.8.2
         with:
             file_glob: "openapi.yaml"
 
@@ -29,6 +28,6 @@ jobs:
           commit-to-git: true
           upload-to-pypi: true
           upload-to-testpypi: false
-          pypi-token: ${{ secrets.PYPI_API_TOKEN }}
-          testpypi-token: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          pypi-token: ${{ secrets.PYPI_PRODUCTION }}
+          testpypi-token: ${{ secrets.PYPI_TEST }}
           python-version: ${{ matrix.python-version }}
