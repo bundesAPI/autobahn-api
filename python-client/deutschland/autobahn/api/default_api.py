@@ -353,7 +353,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -401,7 +401,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -449,7 +449,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -497,7 +497,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -545,7 +545,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -593,7 +593,7 @@ class DefaultApi(object):
                 },
                 "allowed_values": {},
                 "openapi_types": {
-                    "road_id": (str,),
+                    "road_id": (RoadId,),
                 },
                 "attribute_map": {
                     "road_id": "roadId",
@@ -1059,7 +1059,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -1122,7 +1122,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -1185,7 +1185,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -1248,7 +1248,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -1311,7 +1311,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status
@@ -1374,7 +1374,7 @@ class DefaultApi(object):
         >>> result = thread.get()
 
         Args:
-            road_id (str):
+            road_id (RoadId):
 
         Keyword Args:
             _return_http_data_only (bool): response data without head status

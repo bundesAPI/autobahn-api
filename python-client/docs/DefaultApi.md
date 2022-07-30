@@ -529,7 +529,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -545,7 +545,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
@@ -599,7 +599,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -615,7 +615,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
@@ -669,7 +669,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -685,7 +685,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
@@ -739,7 +739,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -755,7 +755,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
@@ -809,7 +809,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -825,7 +825,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
@@ -879,7 +879,7 @@ configuration = autobahn.Configuration(
 with autobahn.ApiClient() as api_client:
     # Create an instance of the API class
     api_instance = default_api.DefaultApi(api_client)
-    road_id = RoadId("A1") # str | 
+    road_id = RoadId("A1") # RoadId | 
 
     # example passing only required values which don't have defaults set
     try:
@@ -895,7 +895,7 @@ with autobahn.ApiClient() as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **road_id** | **str**|  |
+ **road_id** | **RoadId**|  |
 
 ### Return type
 
