@@ -1,0 +1,19 @@
+on: [push, pull_request]
+jobs:
+    schemathesis:
+      name: "Perform schemathesis checks"
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.8' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+      - run: pip install schemathesis
+
+      - name: Set foobar to cool
+        uses: mikefarah/yq@master
+        with:
+          cmd: echo "base_url=$(yq -r .servers[].url openapi.yaml)" >> $GITHUB_ENV
+
+      - run: schemathesis run ./openapi.yaml --base-url "${{ env.base_url }}" --checks status_code_conformance
+
