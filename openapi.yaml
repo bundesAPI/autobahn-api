@@ -161,6 +161,58 @@ paths:
               schema:
                 $ref: "#/components/schemas/RoadsAffected"
 
+  /autobahn/{roadId}/services/parking:
+    get:
+      operationId: list-parkings
+      summary: Liste verfügbarer Rastplätze
+      description: Gibt eine Liste der Rastplätze zu einer Autobahn zurück.
+      parameters:
+        - name: roadId
+          in: path
+          required: true
+          schema:
+            $ref: "#/components/schemas/RoadId"
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLorries"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
+
+  /autobahn/details/parking/{parkingId}:
+    get:
+      operationId: get-parking
+      summary: Details eines Rastplatzes
+      description: Gibt Details eines konkreten Rastplatzes zurück.
+      parameters:
+        - name: parkingId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: byte
+            example: "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA=="
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLorry"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
+
   /services/parking_lorry:
     get:
       operationId: list-parking-lorry-all
