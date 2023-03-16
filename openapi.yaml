@@ -5,11 +5,11 @@ info:
   description: |
     Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.
 servers:
-  - url: https://verkehr.autobahn.de/o/autobahn
+  - url: https://verkehr.autobahn.de/o
 
 paths:
 
-  /:
+  /autobahn/:
     get:
       operationId: list-autobahnen
       summary: Liste verfügbarer Autobahnen
@@ -22,7 +22,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/Roads"
 
-  /{roadId}/services/roadworks:
+  /autobahn/{roadId}/services/roadworks:
     get:
       operationId: list-roadworks
       summary: Liste aktueller Baustellen
@@ -47,7 +47,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/roadworks/{roadworkId}:
+  /autobahn/details/roadworks/{roadworkId}:
     get:
       operationId: get-roadwork
       summary: Details einer Baustelle
@@ -74,7 +74,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/webcam:
+  /autobahn/{roadId}/services/webcam:
     get:
       operationId: list-webcams
       summary: Liste verfügbarer Webcams
@@ -100,7 +100,7 @@ paths:
           description: Not found.
 
   # https://verkehr.autobahn.de/o/autobahn/details/webcam/%5BID%5D
-  /details/webcam/{webcamId}:
+  /autobahn/details/webcam/{webcamId}:
     get:
       operationId: get-webcam
       summary: Details einer Webcam
@@ -127,7 +127,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/parking_lorry:
+  /autobahn/{roadId}/services/parking_lorry:
     get:
       operationId: list-parking-lorries
       summary: Liste verfügbarer Rastplätze
@@ -152,7 +152,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/parking_lorry/{lorryId}:
+  /autobahn/details/parking_lorry/{lorryId}:
     get:
       operationId: get-parking-lorry
       summary: Details eines Rastplatzes
@@ -179,7 +179,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/warning:
+  /autobahn/{roadId}/services/warning:
     get:
       operationId: list-warnings
       summary: Liste aktueller Verkehrsmeldungen
@@ -204,7 +204,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/warning/{warningId}:
+  /autobahn/details/warning/{warningId}:
     get:
       operationId: get-warning
       summary: Details zu einer Verkehrsmeldung
@@ -231,7 +231,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/closure:
+  /autobahn/{roadId}/services/closure:
     get:
       operationId: list-closures
       summary: Liste aktueller Sperrungen
@@ -256,7 +256,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/closure/{closureId}:
+  /autobahn/details/closure/{closureId}:
     get:
       operationId: get-closure
       summary: Details zu einer Sperrung
@@ -283,7 +283,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/electric_charging_station:
+  /autobahn/{roadId}/services/electric_charging_station:
     get:
       operationId: list-charging-stations
       summary: Liste aktueller Ladestationen
@@ -308,7 +308,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/electric_charging_station/{stationId}:
+  /autobahn/details/electric_charging_station/{stationId}:
     get:
       operationId: get-charging-station
       summary: Details zu einer Ladestation
