@@ -27,10 +27,6 @@ paths:
       operationId: list-roadworks-all
       summary: Liste verfügbarer Autobahnen mit aktuellen Baustellen
       description: Gibt eine Liste der verfügbaren Autobahnen mit aktuellen Baustellen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
@@ -149,10 +145,6 @@ paths:
       operationId: list-parking-all
       summary: Liste verfügbarer Autobahnen mit Rastplätzen
       description: Gibt eine Liste der verfügbaren Autobahnen mit Rastplätzen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
@@ -218,10 +210,6 @@ paths:
       operationId: list-parking-lorry-all
       summary: Liste verfügbarer Autobahnen mit Lkw-Rastplätzen
       description: Gibt eine Liste der verfügbaren Autobahnen mit Lkw-Rastplätzen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
@@ -287,10 +275,6 @@ paths:
       operationId: list-warning-all
       summary: Liste verfügbarer Autobahnen mit Verkehrsmeldungen
       description: Gibt eine Liste der verfügbaren Autobahnen mit Verkehrsmeldungen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
@@ -356,10 +340,6 @@ paths:
       operationId: list-closures-all
       summary: Liste verfügbarer Autobahnen mit aktuellen Sperrungen
       description: Gibt eine Liste der verfügbaren Autobahnen mit aktuellen Sperrungen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
@@ -425,10 +405,6 @@ paths:
       operationId: list-charging-stations-all
       summary: Liste verfügbarer Autobahnen mit Ladestationen
       description: Gibt eine Liste der verfügbaren Autobahnen mit Ladestationen zurück.
-      parameters:
-        - name: roadId
-          in: path
-          required: true
       responses:
         "200":
           description: Success
