@@ -195,7 +195,7 @@ class Roadwork(ModelComposed):
             route_recommendation ([{str: (bool, date, datetime, dict, float, int, list, str, none_type)}]): [optional]  # noqa: E501
             coordinate (Coordinate): [optional]  # noqa: E501
             footer (MultilineText): [optional]  # noqa: E501
-            icon (str): [optional]  # noqa: E501
+            icon (str): Sinnbild, das die Art des Eintrags beschreibt. Größtenteils sind diese dem offiziellen Verkehrszeichenkatalog entnommen, teilweise allerdings mit abweichender Bedeutung und/oder nicht offiziellen Unternummern. Wo kein passendes Verkehrszeichen existiert, werden nicht-numerische Werte verwendet: <ul> <li>101: Gefahr</li> <li>123: Bauarbeiten</li> <li>250: Sperrung</li> <li>262-2: Max. 3,5t</li> <li>314-50: Park-/Rastplatz (Pkw/Lkw)</li> <li>314-50-2: Park-/Rastplatz (nur Pkw)</li> <li>448: Anschlussstelle gesperrt</li> <li>charging_plug_strong: Schnellladestation für E-Fahrzeuge</li> <li>warnkegel: Kurzzeitbaustelle</li> </ul> . [optional]  # noqa: E501
             is_blocked (str): [optional]  # noqa: E501
             description (MultilineText): [optional]  # noqa: E501
             title (str): [optional]  # noqa: E501
@@ -317,7 +317,7 @@ class Roadwork(ModelComposed):
             route_recommendation ([{str: (bool, date, datetime, dict, float, int, list, str, none_type)}]): [optional]  # noqa: E501
             coordinate (Coordinate): [optional]  # noqa: E501
             footer (MultilineText): [optional]  # noqa: E501
-            icon (str): [optional]  # noqa: E501
+            icon (str): Sinnbild, das die Art des Eintrags beschreibt. Größtenteils sind diese dem offiziellen Verkehrszeichenkatalog entnommen, teilweise allerdings mit abweichender Bedeutung und/oder nicht offiziellen Unternummern. Wo kein passendes Verkehrszeichen existiert, werden nicht-numerische Werte verwendet: <ul> <li>101: Gefahr</li> <li>123: Bauarbeiten</li> <li>250: Sperrung</li> <li>262-2: Max. 3,5t</li> <li>314-50: Park-/Rastplatz (Pkw/Lkw)</li> <li>314-50-2: Park-/Rastplatz (nur Pkw)</li> <li>448: Anschlussstelle gesperrt</li> <li>charging_plug_strong: Schnellladestation für E-Fahrzeuge</li> <li>warnkegel: Kurzzeitbaustelle</li> </ul> . [optional]  # noqa: E501
             is_blocked (str): [optional]  # noqa: E501
             description (MultilineText): [optional]  # noqa: E501
             title (str): [optional]  # noqa: E501
