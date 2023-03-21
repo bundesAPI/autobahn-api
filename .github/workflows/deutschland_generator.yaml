@@ -6,7 +6,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.7.8' ]
+        python-version: ['3.11.1' ]
     steps:
       - uses: actions/checkout@v2
 
@@ -17,7 +17,7 @@ jobs:
            set -C; echo "extends: spectral:oas" > .spectral.yaml
       # Runs a single command using the runners shell
       - name: "Lint file"
-        uses: stoplightio/spectral-action@v0.8.2
+        uses: stoplightio/spectral-action@latest
         with:
             file_glob: "openapi.yaml"
 
