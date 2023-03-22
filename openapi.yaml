@@ -381,6 +381,49 @@ components:
       type: string
       format: byte
 
+    Impact:
+      type: object
+      example: {
+        "lower": "AS Cloppenburg (63)",
+        "upper": "Cappeln Hagelage-West",
+        "symbols": [
+          "BREAKDOWN_LANE",
+          "BORDER_LEFT",
+          "CLOSED",
+          "ARROW_DOWN",
+          "ARROW_DOWN",
+          "SEPARATE",
+          "ARROW_UP",
+          "ARROW_UP",
+          "ARROW_UP",
+          "BORDER_RIGHT",
+          "BREAKDOWN_LANE"
+        ]
+      }
+      properties:
+        lower:
+          type: string
+          description: Letzter Knotenpunkt vor dem betroffenen Abschnitt (beispielsweise Anschlusstelle oder Rastplatz).
+        upper:
+          type: string
+          description: Erster Knotenpunkt nach dem betroffenen Abschnitt (beispielsweise Anschlusstelle oder Rastplatz).
+        symbols:
+          type: array
+          description: Verkehrsführung im betroffenen Abschnitt.
+          items:
+            type: string
+            enum:
+              - ARROW_DOWN
+              - ARROW_DOWN_BLUE
+              - ARROW_UP
+              - ARROW_UP_BLUE
+              - BORDER_LEFT
+              - BORDER_RIGHT
+              - BREAKDOWN_LANE
+              - CLOSED
+              - SEPARATE
+              - SEPARATE_TMP
+
     MultilineText:
       type: array
       example: [
@@ -472,6 +515,8 @@ components:
             startTimestamp:
               type: string
               format: date-time
+            impact:
+              $ref: '#/components/schemas/Impact'
 
     Roadworks:
       type: object
