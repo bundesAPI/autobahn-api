@@ -354,15 +354,18 @@ components:
     Extent:
       type: string
       pattern: '-?\d+(?:\.\d+)?,\s*-?\d+(?:\.\d+)?,\s*-?\d+(?:\.\d+)?,\s*-?\d+(?:\.\d+)?'
+      description: Rechteck (in WGS84-Koordinaten), das den betroffenen Streckenabschnitt umschließt.
       example: "10.728384054665147,54.00605746113356,10.775848767524598,54.09436740278899"
 
     Point:
       type: string
       pattern: '-?\d+(?:\.\d+)?,\s*-?\d+(?:\.\d+)?'
+      description: Beginn des betroffenen Streckenabschnitts (Längengrad und Breitengrad in WGS84). Identisch zu Coordinate, jedoch sind rundungsbedingte Abweichungen möglich.
       example: "10.729057,54.006057"
 
     Coordinate:
       type: object
+      description: Beginn des betroffenen Streckenabschnitts (Koordinaten in WGS84). Identisch zu Point, jedoch sind rundungsbedingte Abweichungen möglich.
       example: {
         "lat": "54.006057",
         "long": "10.729057"
