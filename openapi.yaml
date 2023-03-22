@@ -403,10 +403,10 @@ components:
       properties:
         lower:
           type: string
-          description: Erster Knotenpunkt nach dem betroffenen Abschnitt (beispielsweise Anschlusstelle oder Rastplatz).
+          description: Erster Knotenpunkt nach dem betroffenen Abschnitt (beispielsweise Anschlussstelle oder Rastplatz).
         upper:
           type: string
-          description: Letzter Knotenpunkt vor dem betroffenen Abschnitt (beispielsweise Anschlusstelle oder Rastplatz).
+          description: Letzter Knotenpunkt vor dem betroffenen Abschnitt (beispielsweise Anschlussstelle oder Rastplatz).
         symbols:
           type: array
           description: Verkehrsführung im betroffenen Abschnitt.
