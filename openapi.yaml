@@ -409,7 +409,20 @@ components:
           description: Letzter Knotenpunkt vor dem betroffenen Abschnitt (beispielsweise Anschlussstelle oder Rastplatz).
         symbols:
           type: array
-          description: Verkehrsführung im betroffenen Abschnitt.
+          description: |
+            Verkehrsführung im betroffenen Abschnitt:
+            <ul>
+            <li>ARROW_DOWN: Spur in Gegenrichtung</li>
+            <li>ARROW_DOWN_BLUE: Spur in Gegenrichtung</li>
+            <li>ARROW_UP: Spur in Fahrtrichtung</li>
+            <li>ARROW_UP_BLUE: Spur in Fahrtrichtung</li>
+            <li>BORDER_LEFT: Linke Fahrbahnbegrenzung</li>
+            <li>BORDER_RIGHT: Rechte Fahrbahnbegrenzung</li>
+            <li>BREAKDOWN_LANE: Pannenstreifen</li>
+            <li>CLOSED: Spur gesperrt</li>
+            <li>SEPARATE: Bauliche Trennung</li>
+            <li>SEPARATE_TMP: Provisorische bauliche Trennung</li>
+            </ul>
           items:
             type: string
             enum:
