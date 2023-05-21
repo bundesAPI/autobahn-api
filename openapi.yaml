@@ -2,6 +2,11 @@ openapi: "3.0.0"
 info:
   version: 1.0.1
   title: Autobahn App API
+  contact:
+    url: https://www.autobahn.de/datenschutz/
+    email: kontakt@autobahn.de
+    name: Die Autobahn GmbH des Bundes
+  x-office: Bundesministerium für Digitales und Verkehr
   description: |
     Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.
 servers:

@@ -11,8 +11,8 @@ sys.path.insert(0, os.path.abspath("../"))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = "autobahn-api"
-copyright = "2023, BundesAPI"
-author = "BundesAPI"
+copyright = "2023, Die Autobahn GmbH des Bundes"
+author = "Die Autobahn GmbH des Bundes"
 
 version = "1.0.4"
 release = "1.0.4"
