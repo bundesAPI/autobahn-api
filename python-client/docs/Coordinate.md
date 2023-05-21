@@ -1,5 +1,6 @@
 # Coordinate
 
+Beginn des betroffenen Streckenabschnitts (Koordinaten in WGS84). Identisch zu Point, jedoch sind rundungsbedingte Abweichungen möglich.
 
 ## Properties
 Name | Type | Description | Notes
