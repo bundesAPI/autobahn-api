@@ -351,7 +351,13 @@ components:
       pattern: '[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?'
       description: |
         Kann jede gültige Straßenbezeichnung sein (nicht auf Autobahnen beschränkt). Die Gültigkeit wird nicht überprüft: Abfragen mit nicht existierenden Straßenbezeichnungen liefern einen leeren Datensatz zurück.
-      example: "A1"
+      examples:
+        autobahn:
+          value: "A1"
+          summary: Autobahnnummer
+        bundesstrasse:
+          value: "B2"
+          summary: Bundesstraßennummer
 
     Extent:
       type: string
