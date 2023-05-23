@@ -9,7 +9,7 @@ servers:
 
 paths:
 
-  /autobahn/:
+  /autobahn:
     get:
       operationId: list-autobahnen
       summary: Liste verfügbarer Autobahnen
