@@ -500,7 +500,7 @@ components:
           $ref: '#/components/schemas/RoadId'
         counter:
           type: string
-          pattern: 'd+'
+          pattern: '\d+'
 
     Extent:
       type: string
