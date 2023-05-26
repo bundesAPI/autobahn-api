@@ -10,11 +10,11 @@ info:
   description: |
     Was passiert auf Deutschlands Bundesstraßen? API für aktuelle Verwaltungsdaten zu Baustellen, Staus und Ladestationen. Außerdem Zugang zu Verkehrsüberwachungskameras und vielen weiteren Datensätzen.
 servers:
-  - url: https://verkehr.autobahn.de/o/autobahn
+  - url: https://verkehr.autobahn.de/o
 
 paths:
 
-  /:
+  /autobahn:
     get:
       operationId: list-autobahnen
       summary: Liste verfügbarer Autobahnen
@@ -27,7 +27,20 @@ paths:
               schema:
                 $ref: "#/components/schemas/Roads"
 
-  /{roadId}/services/roadworks:
+  /services/roadworks:
+    get:
+      operationId: list-roadworks-all
+      summary: Liste verfügbarer Autobahnen mit aktuellen Baustellen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit aktuellen Baustellen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/roadworks:
     get:
       operationId: list-roadworks
       summary: Liste aktueller Baustellen
@@ -52,7 +65,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/roadworks/{roadworkId}:
+  /autobahn/details/roadworks/{roadworkId}:
     get:
       operationId: get-roadwork
       summary: Details einer Baustelle
@@ -79,7 +92,7 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/webcam:
+  /autobahn/{roadId}/services/webcam:
     get:
       operationId: list-webcams
       summary: Liste verfügbarer Webcams
@@ -105,7 +118,7 @@ paths:
           description: Not found.
 
   # https://verkehr.autobahn.de/o/autobahn/details/webcam/%5BID%5D
-  /details/webcam/{webcamId}:
+  /autobahn/details/webcam/{webcamId}:
     get:
       operationId: get-webcam
       summary: Details einer Webcam
@@ -132,9 +145,22 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/parking_lorry:
+  /services/parking:
     get:
-      operationId: list-parking-lorries
+      operationId: list-parking-all
+      summary: Liste verfügbarer Autobahnen mit Rastplätzen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit Rastplätzen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/parking:
+    get:
+      operationId: list-parkings
       summary: Liste verfügbarer Rastplätze
       description: Gibt eine Liste der Rastplätze zu einer Autobahn zurück.
       parameters:
@@ -157,11 +183,76 @@ paths:
         "404":
           description: Not found.
 
-  /details/parking_lorry/{lorryId}:
+  /autobahn/details/parking/{parkingId}:
     get:
-      operationId: get-parking-lorry
+      operationId: get-parking
       summary: Details eines Rastplatzes
       description: Gibt Details eines konkreten Rastplatzes zurück.
+      parameters:
+        - name: parkingId
+          in: path
+          required: true
+          schema:
+            type: string
+            format: byte
+            example: "UEFSS0lOR19fbWRtLmxvcnJ5LnBhcmtpbmdfX0RFLVNILTAwMTEwOA=="
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLorry"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
+
+  /services/parking_lorry:
+    get:
+      operationId: list-parking-lorry-all
+      summary: Liste verfügbarer Autobahnen mit Lkw-Rastplätzen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit Lkw-Rastplätzen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/parking_lorry:
+    get:
+      operationId: list-parking-lorries
+      summary: Liste verfügbarer Lkw-Rastplätze
+      description: Gibt eine Liste der Lkw-Rastplätze zu einer Autobahn zurück.
+      parameters:
+        - name: roadId
+          in: path
+          required: true
+          schema:
+            $ref: "#/components/schemas/RoadId"
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ParkingLorries"
+        "204":
+          description: Not found.
+        "400":
+          description: Internal server error.
+        "404":
+          description: Not found.
+
+  /autobahn/details/parking_lorry/{lorryId}:
+    get:
+      operationId: get-parking-lorry
+      summary: Details eines Lkw-Rastplatzes
+      description: Gibt Details eines konkreten Lkw-Rastplatzes zurück.
       parameters:
         - name: lorryId
           in: path
@@ -184,7 +275,20 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/warning:
+  /services/warning:
+    get:
+      operationId: list-warning-all
+      summary: Liste verfügbarer Autobahnen mit Verkehrsmeldungen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit Verkehrsmeldungen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/warning:
     get:
       operationId: list-warnings
       summary: Liste aktueller Verkehrsmeldungen
@@ -209,7 +313,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/warning/{warningId}:
+  /autobahn/details/warning/{warningId}:
     get:
       operationId: get-warning
       summary: Details zu einer Verkehrsmeldung
@@ -236,7 +340,20 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/closure:
+  /services/closure:
+    get:
+      operationId: list-closures-all
+      summary: Liste verfügbarer Autobahnen mit aktuellen Sperrungen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit aktuellen Sperrungen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/closure:
     get:
       operationId: list-closures
       summary: Liste aktueller Sperrungen
@@ -261,7 +378,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/closure/{closureId}:
+  /autobahn/details/closure/{closureId}:
     get:
       operationId: get-closure
       summary: Details zu einer Sperrung
@@ -288,7 +405,20 @@ paths:
         "404":
           description: Not found.
 
-  /{roadId}/services/electric_charging_station:
+  /services/electric_charging_station:
+    get:
+      operationId: list-charging-stations-all
+      summary: Liste verfügbarer Autobahnen mit Ladestationen
+      description: Gibt eine Liste der verfügbaren Autobahnen mit Ladestationen zurück.
+      responses:
+        "200":
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/RoadsAffected"
+
+  /autobahn/{roadId}/services/electric_charging_station:
     get:
       operationId: list-charging-stations
       summary: Liste aktueller Ladestationen
@@ -313,7 +443,7 @@ paths:
         "404":
           description: Not found.
 
-  /details/electric_charging_station/{stationId}:
+  /autobahn/details/electric_charging_station/{stationId}:
     get:
       operationId: get-charging-station
       summary: Details zu einer Ladestation
@@ -357,6 +487,27 @@ components:
       description: |
         Kann jede gültige Straßenbezeichnung sein (nicht auf Autobahnen beschränkt). Die Gültigkeit wird nicht überprüft: Abfragen mit nicht existierenden Straßenbezeichnungen liefern einen leeren Datensatz zurück. Die Schreibweise kann von der sonst üblichen Form abweichen (z.B. S1234 statt St1234 für Staatsstraßen).
       example: "A1"
+
+    RoadsAffected:
+      type: object
+      properties:
+        roadCounter:
+          type: array
+          items:
+            $ref: '#/components/schemas/RoadCounter'
+
+    RoadCounter:
+      type: object
+      example: {
+        "road": "A1",
+        "counter": "99"
+      }
+      properties:
+        road:
+          $ref: '#/components/schemas/RoadId'
+        counter:
+          type: string
+          pattern: '\d+'
 
     Extent:
       type: string
