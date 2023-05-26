@@ -347,7 +347,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
@@ -395,7 +395,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
@@ -443,7 +443,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
@@ -491,7 +491,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
@@ -539,7 +539,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
@@ -587,7 +587,7 @@ class DefaultApi(object):
                 "validations": {
                     ("road_id",): {
                         "regex": {
-                            "pattern": r"A[1-9]([0-9]{1,3})?(\/A[1-9]{1,3})?",  # noqa: E501
+                            "pattern": r"[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?(\/[A-Z][A-Za-z]*[1-9]([0-9]{1,3})?)?",  # noqa: E501
                         },
                     },
                 },
