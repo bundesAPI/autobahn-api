@@ -499,7 +499,8 @@ components:
         road:
           $ref: '#/components/schemas/RoadId'
         counter:
-          type: number
+          type: string
+          pattern: 'd+'
 
     Extent:
       type: string
