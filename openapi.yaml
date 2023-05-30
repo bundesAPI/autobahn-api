@@ -391,6 +391,62 @@ components:
       type: string
       format: byte
 
+    Impact:
+      type: object
+      example: {
+        "lower": "AS Cloppenburg (63)",
+        "upper": "Cappeln Hagelage-West",
+        "symbols": [
+          "BREAKDOWN_LANE",
+          "BORDER_LEFT",
+          "CLOSED",
+          "ARROW_DOWN",
+          "ARROW_DOWN",
+          "SEPARATE",
+          "ARROW_UP",
+          "ARROW_UP",
+          "ARROW_UP",
+          "BORDER_RIGHT",
+          "BREAKDOWN_LANE"
+        ]
+      }
+      properties:
+        lower:
+          type: string
+          description: Erster Knotenpunkt nach dem betroffenen Abschnitt (beispielsweise Anschlussstelle oder Rastplatz).
+        upper:
+          type: string
+          description: Letzter Knotenpunkt vor dem betroffenen Abschnitt (beispielsweise Anschlussstelle oder Rastplatz).
+        symbols:
+          type: array
+          description: |
+            Verkehrsführung im betroffenen Abschnitt:
+            <ul>
+            <li>ARROW_DOWN: Spur in Gegenrichtung</li>
+            <li>ARROW_DOWN_BLUE: Spur in Gegenrichtung</li>
+            <li>ARROW_UP: Spur in Fahrtrichtung</li>
+            <li>ARROW_UP_BLUE: Spur in Fahrtrichtung</li>
+            <li>BORDER_LEFT: Linke Fahrbahnbegrenzung</li>
+            <li>BORDER_RIGHT: Rechte Fahrbahnbegrenzung</li>
+            <li>BREAKDOWN_LANE: Pannenstreifen</li>
+            <li>CLOSED: Spur gesperrt</li>
+            <li>SEPARATE: Bauliche Trennung</li>
+            <li>SEPARATE_TMP: Provisorische bauliche Trennung</li>
+            </ul>
+          items:
+            type: string
+            enum:
+              - ARROW_DOWN
+              - ARROW_DOWN_BLUE
+              - ARROW_UP
+              - ARROW_UP_BLUE
+              - BORDER_LEFT
+              - BORDER_RIGHT
+              - BREAKDOWN_LANE
+              - CLOSED
+              - SEPARATE
+              - SEPARATE_TMP
+
     MultilineText:
       type: array
       example: [
@@ -495,6 +551,8 @@ components:
             startTimestamp:
               type: string
               format: date-time
+            impact:
+              $ref: '#/components/schemas/Impact'
 
     Roadworks:
       type: object
