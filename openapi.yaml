@@ -412,6 +412,7 @@ components:
         <li>101: Gefahr</li>
         <li>123: Bauarbeiten</li>
         <li>250: Sperrung</li>
+        <li>253: Sperrung für Lkw</li>
         <li>262-2: Max. 3,5t</li>
         <li>314-50: Park-/Rastplatz (Pkw/Lkw)</li>
         <li>314-50-2: Park-/Rastplatz (nur Pkw)</li>
@@ -430,6 +431,7 @@ components:
         - WEIGHT_LIMIT_35
         - CLOSURE
         - CLOSURE_ENTRY_EXIT
+        - CLOSURE_TRUCKS
         - STRONG_ELECTRIC_CHARGING_STATION
         - SHORT_TERM_ROADWORKS
         - ELECTRIC_CHARGING_STATION
